@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DoesItSuckModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="DoesItSuckModelStoreContainer">
+          <EntitySet Name="Review" EntityType="DoesItSuckModel.Store.Review" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Review_Tag_Rel" EntityType="DoesItSuckModel.Store.Review_Tag_Rel" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Tag" EntityType="DoesItSuckModel.Store.Tag" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Review_Tag_Rel_Review" Association="DoesItSuckModel.Store.FK_Review_Tag_Rel_Review">
+            <End Role="Review" EntitySet="Review" />
+            <End Role="Review_Tag_Rel" EntitySet="Review_Tag_Rel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Review_Tag_Rel_Review_Tag_Rel" Association="DoesItSuckModel.Store.FK_Review_Tag_Rel_Review_Tag_Rel">
+            <End Role="Review_Tag_Rel" EntitySet="Review_Tag_Rel" />
+            <End Role="Review_Tag_Rel1" EntitySet="Review_Tag_Rel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Review_Tag_Rel_Tag" Association="DoesItSuckModel.Store.FK_Review_Tag_Rel_Tag">
+            <End Role="Tag" EntitySet="Tag" />
+            <End Role="Review_Tag_Rel" EntitySet="Review_Tag_Rel" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Review">
+          <Key>
+            <PropertyRef Name="Review_ID" />
+          </Key>
+          <Property Name="Review_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Body" Type="varchar" Nullable="false" MaxLength="7000" />
+          <Property Name="Link" Type="varchar" MaxLength="100" />
+          <Property Name="Date_Created" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Review_Tag_Rel">
+          <Key>
+            <PropertyRef Name="Review_Tag_Rel_ID" />
+          </Key>
+          <Property Name="Review_Tag_Rel_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Review_ID" Type="int" Nullable="false" />
+          <Property Name="Tag_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tag">
+          <Key>
+            <PropertyRef Name="Tag_ID" />
+          </Key>
+          <Property Name="Tag_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Tag_Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Date_Created" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Review_Tag_Rel_Review">
+          <End Role="Review" Type="DoesItSuckModel.Store.Review" Multiplicity="1" />
+          <End Role="Review_Tag_Rel" Type="DoesItSuckModel.Store.Review_Tag_Rel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Review">
+              <PropertyRef Name="Review_ID" />
+            </Principal>
+            <Dependent Role="Review_Tag_Rel">
+              <PropertyRef Name="Review_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Review_Tag_Rel_Review_Tag_Rel">
+          <End Role="Review_Tag_Rel" Type="DoesItSuckModel.Store.Review_Tag_Rel" Multiplicity="1" />
+          <End Role="Review_Tag_Rel1" Type="DoesItSuckModel.Store.Review_Tag_Rel" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Review_Tag_Rel">
+              <PropertyRef Name="Review_Tag_Rel_ID" />
+            </Principal>
+            <Dependent Role="Review_Tag_Rel1">
+              <PropertyRef Name="Review_Tag_Rel_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Review_Tag_Rel_Tag">
+          <End Role="Tag" Type="DoesItSuckModel.Store.Tag" Multiplicity="1" />
+          <End Role="Review_Tag_Rel" Type="DoesItSuckModel.Store.Review_Tag_Rel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tag">
+              <PropertyRef Name="Tag_ID" />
+            </Principal>
+            <Dependent Role="Review_Tag_Rel">
+              <PropertyRef Name="Tag_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DoesItSuckModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DoesItSuckEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Review" EntityType="DoesItSuckModel.Review" />
+          <EntitySet Name="Review_Tag_Rel" EntityType="DoesItSuckModel.Review_Tag_Rel" />
+          <EntitySet Name="Tag" EntityType="DoesItSuckModel.Tag" />
+          <AssociationSet Name="FK_Review_Tag_Rel_Review" Association="DoesItSuckModel.FK_Review_Tag_Rel_Review">
+            <End Role="Review" EntitySet="Review" />
+            <End Role="Review_Tag_Rel" EntitySet="Review_Tag_Rel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Review_Tag_Rel_Review_Tag_Rel" Association="DoesItSuckModel.FK_Review_Tag_Rel_Review_Tag_Rel">
+            <End Role="Review_Tag_Rel" EntitySet="Review_Tag_Rel" />
+            <End Role="Review_Tag_Rel1" EntitySet="Review_Tag_Rel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Review_Tag_Rel_Tag" Association="DoesItSuckModel.FK_Review_Tag_Rel_Tag">
+            <End Role="Tag" EntitySet="Tag" />
+            <End Role="Review_Tag_Rel" EntitySet="Review_Tag_Rel" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Review">
+          <Key>
+            <PropertyRef Name="Review_ID" />
+          </Key>
+          <Property Name="Review_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Body" Type="String" Nullable="false" MaxLength="7000" Unicode="false" FixedLength="false" />
+          <Property Name="Link" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Date_Created" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Review_Tag_Rel" Relationship="DoesItSuckModel.FK_Review_Tag_Rel_Review" FromRole="Review" ToRole="Review_Tag_Rel" />
+        </EntityType>
+        <EntityType Name="Review_Tag_Rel">
+          <Key>
+            <PropertyRef Name="Review_Tag_Rel_ID" />
+          </Key>
+          <Property Name="Review_Tag_Rel_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Review_ID" Type="Int32" Nullable="false" />
+          <Property Name="Tag_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Review" Relationship="DoesItSuckModel.FK_Review_Tag_Rel_Review" FromRole="Review_Tag_Rel" ToRole="Review" />
+          <NavigationProperty Name="Review_Tag_Rel1" Relationship="DoesItSuckModel.FK_Review_Tag_Rel_Review_Tag_Rel" FromRole="Review_Tag_Rel" ToRole="Review_Tag_Rel1" />
+          <NavigationProperty Name="Review_Tag_Rel2" Relationship="DoesItSuckModel.FK_Review_Tag_Rel_Review_Tag_Rel" FromRole="Review_Tag_Rel1" ToRole="Review_Tag_Rel" />
+          <NavigationProperty Name="Tag" Relationship="DoesItSuckModel.FK_Review_Tag_Rel_Tag" FromRole="Review_Tag_Rel" ToRole="Tag" />
+        </EntityType>
+        <EntityType Name="Tag">
+          <Key>
+            <PropertyRef Name="Tag_ID" />
+          </Key>
+          <Property Name="Tag_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tag_Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Date_Created" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Review_Tag_Rel" Relationship="DoesItSuckModel.FK_Review_Tag_Rel_Tag" FromRole="Tag" ToRole="Review_Tag_Rel" />
+        </EntityType>
+        <Association Name="FK_Review_Tag_Rel_Review">
+          <End Role="Review" Type="DoesItSuckModel.Review" Multiplicity="1" />
+          <End Role="Review_Tag_Rel" Type="DoesItSuckModel.Review_Tag_Rel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Review">
+              <PropertyRef Name="Review_ID" />
+            </Principal>
+            <Dependent Role="Review_Tag_Rel">
+              <PropertyRef Name="Review_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Review_Tag_Rel_Review_Tag_Rel">
+          <End Role="Review_Tag_Rel" Type="DoesItSuckModel.Review_Tag_Rel" Multiplicity="1" />
+          <End Role="Review_Tag_Rel1" Type="DoesItSuckModel.Review_Tag_Rel" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Review_Tag_Rel">
+              <PropertyRef Name="Review_Tag_Rel_ID" />
+            </Principal>
+            <Dependent Role="Review_Tag_Rel1">
+              <PropertyRef Name="Review_Tag_Rel_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Review_Tag_Rel_Tag">
+          <End Role="Tag" Type="DoesItSuckModel.Tag" Multiplicity="1" />
+          <End Role="Review_Tag_Rel" Type="DoesItSuckModel.Review_Tag_Rel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tag">
+              <PropertyRef Name="Tag_ID" />
+            </Principal>
+            <Dependent Role="Review_Tag_Rel">
+              <PropertyRef Name="Tag_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DoesItSuckModelStoreContainer" CdmEntityContainer="DoesItSuckEntities">
+          <EntitySetMapping Name="Review">
+            <EntityTypeMapping TypeName="DoesItSuckModel.Review">
+              <MappingFragment StoreEntitySet="Review">
+                <ScalarProperty Name="Review_ID" ColumnName="Review_ID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="Date_Created" ColumnName="Date_Created" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Review_Tag_Rel">
+            <EntityTypeMapping TypeName="DoesItSuckModel.Review_Tag_Rel">
+              <MappingFragment StoreEntitySet="Review_Tag_Rel">
+                <ScalarProperty Name="Review_Tag_Rel_ID" ColumnName="Review_Tag_Rel_ID" />
+                <ScalarProperty Name="Review_ID" ColumnName="Review_ID" />
+                <ScalarProperty Name="Tag_ID" ColumnName="Tag_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tag">
+            <EntityTypeMapping TypeName="DoesItSuckModel.Tag">
+              <MappingFragment StoreEntitySet="Tag">
+                <ScalarProperty Name="Tag_ID" ColumnName="Tag_ID" />
+                <ScalarProperty Name="Tag_Name" ColumnName="Tag_Name" />
+                <ScalarProperty Name="Date_Created" ColumnName="Date_Created" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

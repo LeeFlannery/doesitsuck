@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="59001790076e4cb79a27024c428a73fd" Name="Diagram1">
+        <EntityTypeShape EntityType="DoesItSuckModel.Review" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DoesItSuckModel.Review_Tag_Rel" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DoesItSuckModel.Tag" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <AssociationConnector Association="DoesItSuckModel.FK_Review_Tag_Rel_Review" ManuallyRouted="false" />
+        <AssociationConnector Association="DoesItSuckModel.FK_Review_Tag_Rel_Review_Tag_Rel" ManuallyRouted="false" />
+        <AssociationConnector Association="DoesItSuckModel.FK_Review_Tag_Rel_Tag" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
