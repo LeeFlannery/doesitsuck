@@ -1,4 +1,4 @@
-doesitsuck
+Does it suck?
 ==========
 
-Well, does it?
+A community-based review site.
