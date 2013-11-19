@@ -23,7 +23,8 @@ namespace DoesItSuck.Models
         public string Title { get; set; }
         public string Body { get; set; }
         public string Link { get; set; }
-        public Nullable<System.DateTime> Date_Created { get; set; }
+        public byte Rating { get; set; }
+        public System.DateTime Date_Created { get; set; }
     
         public virtual ICollection<Review_Tag_Rel> Review_Tag_Rel { get; set; }
     }
