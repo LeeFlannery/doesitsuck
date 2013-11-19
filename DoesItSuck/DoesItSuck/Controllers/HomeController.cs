@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DoesItSuck.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,25 +9,46 @@ namespace DoesItSuck.Controllers
 {
     public class HomeController : Controller
     {
+        private DoesItSuckEntities db = new DoesItSuckEntities();
+
         public ActionResult Index()
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
+            return View(db.Review.ToList());
+            
+        }
+
+        //
+        // GET: /Review/Create
+
+        public ActionResult Create()
+        {
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your app description page.";
+        //
+        // POST: /Review/Create
 
-            return View();
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Review review)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Review.Add(review);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(review);
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
 
-            return View();
+        protected override void Dispose(bool disposing)
+        {
+            db.Dispose();
+            base.Dispose(disposing);
         }
     }
 }
