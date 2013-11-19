@@ -19,7 +19,8 @@ BEGIN
 		Title varchar(100) NOT NULL,
 		Body varchar(7000) NOT NULL,
 		Link varchar(100) NULL,
-		Date_Created datetime NULL,
+		Rating tinyint NOT NULL,
+		Date_Created datetime NOT NULL,
 	 CONSTRAINT PK_Review PRIMARY KEY CLUSTERED 
 	(
 		Review_ID ASC
