@@ -36,6 +36,7 @@ namespace DoesItSuck.Controllers
         {
             if (ModelState.IsValid)
             {
+                review.Date_Created = DateTime.Now;
                 db.Review.Add(review);
                 db.SaveChanges();
                 return RedirectToAction("Index");
