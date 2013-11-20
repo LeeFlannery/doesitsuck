@@ -14,18 +14,12 @@ namespace DoesItSuck.Models
     
     public partial class Review
     {
-        public Review()
-        {
-            this.Review_Tag_Rel = new HashSet<Review_Tag_Rel>();
-        }
-    
         public int Review_ID { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
         public string Link { get; set; }
+        public string Category { get; set; }
         public byte Rating { get; set; }
         public System.DateTime Date_Created { get; set; }
-    
-        public virtual ICollection<Review_Tag_Rel> Review_Tag_Rel { get; set; }
     }
 }

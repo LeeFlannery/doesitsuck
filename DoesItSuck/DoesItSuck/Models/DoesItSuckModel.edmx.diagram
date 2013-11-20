@@ -5,12 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="59001790076e4cb79a27024c428a73fd" Name="Diagram1">
-        <EntityTypeShape EntityType="DoesItSuckModel.Review" Width="1.5" PointX="5.003045520280974" PointY="10.994552379005846" />
-        <EntityTypeShape EntityType="DoesItSuckModel.Review_Tag_Rel" Width="1.5" PointX="8.44581843374568" PointY="19.529825204764411" />
-        <EntityTypeShape EntityType="DoesItSuckModel.Tag" Width="1.5" PointX="6.4467884443918191" PointY="31.333867698597661" />
-        <AssociationConnector Association="DoesItSuckModel.FK_Review_Tag_Rel_Review" />
-        <AssociationConnector Association="DoesItSuckModel.FK_Review_Tag_Rel_Review_Tag_Rel" />
-        <AssociationConnector Association="DoesItSuckModel.FK_Review_Tag_Rel_Tag" />
+        <EntityTypeShape EntityType="DoesItSuckModel.Review" Width="1.5" PointX="6" PointY="3.375" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

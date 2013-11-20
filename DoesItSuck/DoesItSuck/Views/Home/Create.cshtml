@@ -38,6 +38,14 @@
         </div>
 
         <div class="editor-label">
+            @Html.LabelFor(model => model.Category)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.Category, new SelectList(Enum.GetValues(typeof(DoesItSuck.Models.Category))))
+            @Html.ValidationMessageFor(model => model.Category)
+        </div>
+
+        <div class="editor-label">
             @Html.LabelFor(model => model.Link)
         </div>
         <div class="editor-field">
