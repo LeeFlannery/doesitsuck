@@ -11,9 +11,16 @@ namespace DoesItSuck.Controllers
     {
         private DoesItSuckEntities db = new DoesItSuckEntities();
 
-        public ActionResult Index()
+        public ActionResult Index(string category)
         {
-            return View(db.Review.ToList());            
+            if (!String.IsNullOrEmpty(category))
+            {
+                return View(db.Review.Where(x => x.Category == category).ToList());
+            }
+            else
+            {
+                return View(db.Review.ToList());
+            }
         }
 
         //
