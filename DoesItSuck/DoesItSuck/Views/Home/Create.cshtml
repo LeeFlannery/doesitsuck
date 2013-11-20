@@ -1,9 +1,5 @@
 ﻿@model DoesItSuck.Models.Review
 
-@{
-    ViewBag.Title = "Create";
-}
-
 <h2>Create</h2>
 
 @using (Html.BeginForm()) {
@@ -60,7 +56,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Cancel", "Index")
 </div>
 
 @section Scripts {

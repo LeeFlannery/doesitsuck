@@ -1,35 +1,35 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Does It Suck?</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
-    </head>
-    <body>
-        <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("Does It Suck?", "Index", "Home")</p>
-                </div>
-            </div>
-        </header>
-        <div id="body">
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-            </section>
-        </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - Team Two dot biz</p>
-                </div>
-            </div>
-        </footer>
+<head>
+    <meta charset="utf-8" />
+    <title>Does It Suck?</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <h1>@Html.ActionLink("Does It Suck?", "Index", "Home")</h1>
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("Movies", "Index", new { category = "Movies" })</li>
+                <li>@Html.ActionLink("Music", "Index", new { category = "Music" })</li>
+                <li>@Html.ActionLink("Games", "Index", new { category = "Games" })</li>
+                <li>@Html.ActionLink("Tech", "Index", new { category = "Tech" })</li>
+                <li>@Html.ActionLink("Music", "Index", new { category = "Music" })</li>
+                <li>@Html.ActionLink("Other", "Index", new { category = "Other" })</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        @RenderBody()
+    </section>
+    <footer>
+        
+    </footer>
 
-        @Scripts.Render("~/bundles/jquery")
-        @RenderSection("scripts", required: false)
-    </body>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
 </html>
