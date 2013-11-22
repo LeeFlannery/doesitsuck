@@ -2,4 +2,9 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+/* Syntax error: Invalid CSS after "font-family:": expected pseudoclass or pseudoelement, was " "Lucida Grande..."
+        on line 18 of C:/Users/fisht/Documents/GitHub/doesitsuck/DoesItSuck/DoesItSuck/Content/_variables.scss
+        from line 2 of C:\Users\fisht\Documents\GitHub\doesitsuck\DoesItSuck\DoesItSuck\Content\main.scss
+  Use --trace for backtrace.
 
+ */
