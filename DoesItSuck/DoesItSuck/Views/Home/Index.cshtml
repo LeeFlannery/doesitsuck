@@ -3,21 +3,24 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-    
-@foreach (var item in Model) {
-    <article>
-        <header>
-            <h1>@Html.DisplayFor(modelItem => item.Title)</h1>
-            <p>@Html.DisplayFor(modelItem => item.Rating)</p>
-        </header>
-        <section>
-            @Html.DisplayFor(modelItem => item.Body)
-        </section>        
-        <aside>
-            @Html.DisplayFor(modelItem => item.Category)
-        </aside>
-        <footer>
-            @Html.DisplayFor(modelItem => item.Link)
-        </footer>
-    </article>
-}
+
+<section class="ReviewsContainer">
+    @foreach (var item in Model)
+    {
+        <article>
+            <header>
+                <h1>@Html.DisplayFor(modelItem => item.Title)</h1>
+                <p>@Html.DisplayFor(modelItem => item.Rating)</p>
+            </header>
+            <section>
+                @Html.DisplayFor(modelItem => item.Body)
+            </section>
+            <aside>
+                @Html.DisplayFor(modelItem => item.Category)
+            </aside>
+            <footer>
+                @Html.DisplayFor(modelItem => item.Link)
+            </footer>
+        </article>
+    }
+</section>

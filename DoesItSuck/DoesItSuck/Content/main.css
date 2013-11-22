@@ -1,3 +1,31 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; }
+
+.ReviewsContainer {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .ReviewsContainer:before, .ReviewsContainer:after {
+    content: " ";
+    display: table; }
+  .ReviewsContainer:after {
+    clear: both; }
+
+article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  article:last-child {
+    margin-right: 0; }
+  article:nth-child(4n) {
+    margin-right: 0; }
+  article:nth-child(4n+1) {
+    clear: left; }
 

@@ -192,6 +192,9 @@
     <Content Include="Content\main.css">
       <DependentUpon>main.scss</DependentUpon>
     </Content>
+    <Content Include="Content\_grid-item.css">
+      <DependentUpon>_grid-item.scss</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <EntityDeploy Include="Models\DoesItSuckModel.edmx">
@@ -277,6 +280,26 @@
       <CompileStyle>Nested</CompileStyle>
       <DebugInfo>False</DebugInfo>
     </Content>
+    <Content Include="Content\_layout.scss" />
+    <Content Include="Content\neat\functions\_new-breakpoint.scss" />
+    <Content Include="Content\neat\functions\_private.scss" />
+    <Content Include="Content\neat\grid\_fill-parent.scss" />
+    <Content Include="Content\neat\grid\_grid.scss" />
+    <Content Include="Content\neat\grid\_media.scss" />
+    <Content Include="Content\neat\grid\_omega.scss" />
+    <Content Include="Content\neat\grid\_outer-container.scss" />
+    <Content Include="Content\neat\grid\_pad.scss" />
+    <Content Include="Content\neat\grid\_private.scss" />
+    <Content Include="Content\neat\grid\_reset.scss" />
+    <Content Include="Content\neat\grid\_row.scss" />
+    <Content Include="Content\neat\grid\_shift.scss" />
+    <Content Include="Content\neat\grid\_span-columns.scss" />
+    <Content Include="Content\neat\grid\_to-deprecate.scss" />
+    <Content Include="Content\neat\grid\_visual-grid.scss" />
+    <Content Include="Content\neat\settings\_grid.scss" />
+    <Content Include="Content\neat\settings\_visual-grid.scss" />
+    <Content Include="Content\neat\_neat-helpers.scss" />
+    <Content Include="Content\neat\_neat.scss" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
