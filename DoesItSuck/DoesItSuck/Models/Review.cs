@@ -11,11 +11,13 @@ namespace DoesItSuck.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class Review
     {
         public int Review_ID { get; set; }
         public string Title { get; set; }
+        [DataType(DataType.MultilineText)]
         public string Body { get; set; }
         public string Link { get; set; }
         public string Category { get; set; }

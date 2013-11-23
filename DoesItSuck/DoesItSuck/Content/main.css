@@ -3,8 +3,61 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+fieldset {
+  width: 50em; }
+
 body {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; }
+
+label {
+  display: inline-block;
+  width: 10em; }
+
+.text-box.single-line {
+  width: 20em; }
+
+textarea {
+  width: 20em; }
+
+input[type=radio] {
+  display: none;
+  margin: 10px; }
+
+input[type=radio] + label {
+  display: inline-block;
+  margin: 0px;
+  padding: 4px 12px;
+  background-color: #e7e7e7;
+  border-color: #ddd;
+  width: auto; }
+
+input[type=radio]:checked + label {
+  background-image: none;
+  background-color: #d0d0d0; }
+
+#Games:checked {
+  background-image: none;
+  background-color: #e99f00; }
+
+.Tech input[type=radio]:checked + label {
+  background-image: none;
+  background-color: #96d400; }
+
+.LULZ > input[type=radio]:checked + label {
+  background-image: none;
+  background-color: #555555; }
+
+.Movies > input[type=radio]:checked + label {
+  background-image: none;
+  background-color: #00a0db; }
+
+.Video > input[type=radio]:checked + label {
+  background-image: none;
+  background-color: #aa0000; }
+
+.Music > input[type=radio]:checked + label {
+  background-image: none;
+  background-color: #f03232; }
 
 .ReviewsContainer {
   *zoom: 1;

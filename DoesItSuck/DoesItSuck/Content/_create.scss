@@ -1,9 +1,77 @@
 fieldset
 {
-
+	width: 50em;
 }
 
 
 body {
 	font-family: $lucida;
+}
+
+
+label 
+{
+		display: inline-block;
+		width: 10em;
+}
+
+.text-box.single-line
+{
+	width: 20em;
+}
+
+textarea
+{
+	width: 20em;
+}
+
+
+input[type=radio] {
+    display:none; 
+    margin:10px;
+}
+ input[type=radio] + label {
+    display:inline-block;
+    margin:0px;
+    padding: 4px 12px;
+    background-color: #e7e7e7;
+    border-color: #ddd;
+	width: auto;
+}
+
+input[type=radio]:checked + label 
+{ 
+   background-image: none;
+   background-color:#d0d0d0;
+}
+
+#Games:checked
+{ 
+   background-image: none;
+   background-color:$category-games-header;
+}
+.Tech input[type=radio]:checked + label 
+{ 
+   background-image: none;
+   background-color:$category-tech-header;
+}
+.LULZ > input[type=radio]:checked + label 
+{ 
+   background-image: none;
+   background-color:$category-lulz-header;
+}
+.Movies > input[type=radio]:checked + label 
+{ 
+   background-image: none;
+   background-color:$category-movies-header;
+}
+.Video > input[type=radio]:checked + label 
+{ 
+   background-image: none;
+   background-color:$category-video-header;
+}
+.Music > input[type=radio]:checked + label 
+{ 
+   background-image: none;
+   background-color:$category-music-header;
 }

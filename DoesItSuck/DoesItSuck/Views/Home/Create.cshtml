@@ -11,40 +11,32 @@
         
         <div>
             @Html.LabelFor(model => model.Title)
-        </div>
-        <div>
             @Html.EditorFor(model => model.Title)
             @Html.ValidationMessageFor(model => model.Title)
         </div>
 
         <div>
-            @Html.LabelFor(model => model.Rating)
-        </div>
-        <div>
-            @Html.EditorFor(model => model.Rating)
-            @Html.ValidationMessageFor(model => model.Rating)
-        </div>
-
-        <div>
             @Html.LabelFor(model => model.Body)
-        </div>
-        <div>
             @Html.EditorFor(model => model.Body)
             @Html.ValidationMessageFor(model => model.Body)
         </div>
 
         <div>
+
             @Html.LabelFor(model => model.Category)
+            @foreach (var value in Enum.GetValues(typeof(DoesItSuck.Models.Category)))
+            {
+                @Html.RadioButtonFor(model => model.Category, value,  new { id = value, @class = value })
+                @Html.Label(value.ToString())
+            }    
         </div>
         <div>
-            @Html.DropDownListFor(model => model.Category, new SelectList(Enum.GetValues(typeof(DoesItSuck.Models.Category))))
-            @Html.ValidationMessageFor(model => model.Category)
+            @Html.LabelFor(model => model.Rating)
+            @Html.EditorFor(model => model.Rating)
+            @Html.ValidationMessageFor(model => model.Rating)
         </div>
-
         <div>
             @Html.LabelFor(model => model.Link)
-        </div>
-        <div>
             @Html.EditorFor(model => model.Link)
             @Html.ValidationMessageFor(model => model.Link)
         </div>
