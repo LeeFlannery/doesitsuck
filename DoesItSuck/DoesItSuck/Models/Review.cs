@@ -17,12 +17,10 @@ namespace DoesItSuck.Models
     {
         public int Review_ID { get; set; }
 
-        [StringLength(100,MinimumLength=5)]
         [Required()]
         public string Title { get; set; }
 
         [DataType(DataType.MultilineText)]
-        [StringLength(7000, MinimumLength = 5)]
         [Required()]
         public string Body { get; set; }
         public string Link { get; set; }
@@ -30,7 +28,7 @@ namespace DoesItSuck.Models
 
         [Required(ErrorMessage = "Rating is required.")]
         [RegularExpression("[1-5]", ErrorMessage="Rating must be between 1 and 5.")]
-        [Range(typeof(byte),"1","5", ErrorMessage="Rating must be a number between 1 and 5.")]
+        [Range(typeof(byte),"1","5", ErrorMessage="Rating must be between 1 and 5.")]
         public byte Rating { get; set; }
         public System.DateTime Date_Created { get; set; }
     }
