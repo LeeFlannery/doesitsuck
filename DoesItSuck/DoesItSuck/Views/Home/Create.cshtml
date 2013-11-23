@@ -26,8 +26,8 @@
             @Html.LabelFor(model => model.Category)
             @foreach (var value in Enum.GetValues(typeof(DoesItSuck.Models.Category)))
             {
-                @Html.RadioButtonFor(model => model.Category, value,  new { id = value, @class = value })
-                @Html.Label(value.ToString())
+                @Html.RadioButtonFor(model => model.Category, value,  new { id = value, @class = value + "_radio" })
+                @Html.Label(value.ToString(), new { @class = value + "_radio" })
             }    
         </div>
         <div>

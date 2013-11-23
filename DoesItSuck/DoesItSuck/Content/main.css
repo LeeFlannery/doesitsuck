@@ -19,6 +19,18 @@ label {
 textarea {
   width: 20em; }
 
+.field-validation-error {
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  color: red; }
+
 input[type=radio] {
   display: none;
   margin: 10px; }
@@ -28,34 +40,34 @@ input[type=radio] + label {
   margin: 0px;
   padding: 4px 12px;
   background-color: #e7e7e7;
-  border-color: #ddd;
+  border-color: black;
   width: auto; }
 
 input[type=radio]:checked + label {
   background-image: none;
   background-color: #d0d0d0; }
 
-#Games:checked {
+.Games_radio {
   background-image: none;
   background-color: #e99f00; }
 
-.Tech input[type=radio]:checked + label {
+.Tech_radio input[type=radio]:checked + label {
   background-image: none;
   background-color: #96d400; }
 
-.LULZ > input[type=radio]:checked + label {
+.LULZ_radio > input[type=radio]:checked + label {
   background-image: none;
   background-color: #555555; }
 
-.Movies > input[type=radio]:checked + label {
+.Movies_radio > input[type=radio]:checked + label {
   background-image: none;
   background-color: #00a0db; }
 
-.Video > input[type=radio]:checked + label {
+.Video_radio > input[type=radio]:checked + label {
   background-image: none;
   background-color: #aa0000; }
 
-.Music > input[type=radio]:checked + label {
+.Music_radio > input[type=radio]:checked + label {
   background-image: none;
   background-color: #f03232; }
 
