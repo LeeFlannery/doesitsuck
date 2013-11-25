@@ -1,9 +1,5 @@
 ﻿@model IEnumerable<DoesItSuck.Models.Review>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-
 <section class="ReviewsContainer">
     @foreach (var item in Model)
     {
@@ -13,14 +9,12 @@
                 <p>@Html.DisplayFor(modelItem => item.Rating)</p>
             </header>
             <section>
-                @Html.DisplayFor(modelItem => item.Body)
+                <p>@Html.DisplayFor(modelItem => item.Body)</p>
+                @Html.DisplayFor(modelItem => item.Link)
             </section>
             <aside>
                 @Html.DisplayFor(modelItem => item.Category)
             </aside>
-            <footer>
-                @Html.DisplayFor(modelItem => item.Link)
-            </footer>
         </article>
     }
 </section>

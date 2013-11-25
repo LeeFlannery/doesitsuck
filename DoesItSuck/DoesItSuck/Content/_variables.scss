@@ -14,5 +14,11 @@ $category-lulz-body: #232323;
 $text-color: #F8F8F8;
 $empty-background: #F8F8F8;
 $unhovered-menu-text: #121212;
+$home-menu-background: #00bcff;
+$home-menu-text: #ffffff;
+$footer-background: #222222;
+$footer-text: #ffffff;
 
 $lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+
+$tiny-breakpoint: new-breakpoint(max-width 767px);

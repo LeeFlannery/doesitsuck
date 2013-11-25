@@ -195,7 +195,6 @@
     <Content Include="Content\_grid-item.css">
       <DependentUpon>_grid-item.scss</DependentUpon>
     </Content>
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <EntityDeploy Include="Models\DoesItSuckModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -327,12 +326,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\Create.cshtml" />
-    <Content Include="Views\Shared\EnumModel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Filters\" />
-    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
