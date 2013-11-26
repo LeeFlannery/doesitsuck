@@ -139,32 +139,30 @@ input[type=radio]:checked + label {
 body {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; }
 
-nav {
-  *zoom: 1;
-  max-width: 68em;
+header {
+  max-width: 68rem;
   margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 20px; }
-  nav:before, nav:after {
-    content: " ";
-    display: table; }
-  nav:after {
-    clear: both; }
+  margin-right: auto; }
+
+nav {
+  margin: 20px 0px; }
+
+h1[role="heading"] {
+  background: #00bcff;
+  float: left;
+  font-size: 1rem;
+  margin: -6px 15px 0px 0px;
+  padding: 6px; }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
-
-li {
-  display: inline;
-  margin-right: 15px; }
-  li i {
-    opacity: 0; }
-
-li:first-of-type {
-  background: #00bcff; }
+  ul li {
+    display: inline;
+    margin-right: 15px; }
+  ul li:first-child {
+    display: none; }
 
 a {
   -webkit-transition: 333ms;
@@ -202,28 +200,29 @@ footer {
   text-align: center;
   background: #222222;
   color: white;
-  min-height: 100px;
-  width: 99%; }
+  min-height: 100px; }
 
 i {
-  margin: 10px; }
+  margin: 0px 10px; }
 
 @media screen and (max-width: 767px) {
   ul {
-    width: 175px;
-    position: relative; }
+    float: right;
+    position: relative;
+    margin-top: -8px; }
+    ul li:first-child {
+      position: relative;
+      opacity: 1;
+      display: block;
+      font-size: 1.7rem;
+      background: #00bcff; }
     ul li {
       position: absolute;
       opacity: 0;
       display: block;
-      -webkit-transition: 222ms;
-      -moz-transition: 222ms;
-      transition: 222ms; }
-      ul li i {
-        opacity: 1; }
-    ul li:first-child {
-      position: relative;
-      opacity: 1; }
+      -webkit-transition: 333ms;
+      -moz-transition: 333ms;
+      transition: 333ms; }
     ul:hover li {
       opacity: 1; }
 
@@ -237,6 +236,18 @@ i {
     article:nth-child(2n) {
       margin-right: 0; }
     article:nth-child(2n+1) {
+      clear: left; } }
+@media screen and (max-width: 430px) {
+  article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    article:last-child {
+      margin-right: 0; }
+    article:nth-child(1n) {
+      margin-right: 0; }
+    article:nth-child(1n+1) {
       clear: left; } }
       
       

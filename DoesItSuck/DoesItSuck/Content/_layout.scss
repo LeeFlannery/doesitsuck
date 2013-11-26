@@ -4,11 +4,25 @@ body {
 	font-family: $lucida;
 }
 
+header
+{
+	max-width: 68rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 nav
 {
-	@include outer-container;
-	margin-bottom: 20px;
-	margin-top: 20px;
+	margin: 20px 0px;
+}
+
+h1[role="heading"]
+{
+	background: $home-menu-background;	
+	float: left;
+	font-size: 1rem;
+	margin: -6px 15px 0px 0px;
+	padding: 6px;
 }
 
 ul
@@ -16,22 +30,17 @@ ul
 	list-style-type :none;
 	margin: 0;
 	padding: 0;
-}
 
-li
-{
-	display: inline;
-	margin-right: 15px;
-
-	i
+	li
 	{
-		opacity: 0;
+		display: inline;
+		margin-right: 15px;
 	}
-}
 
-li:first-of-type
-{
-	background: $home-menu-background;	
+	li:first-child
+	{
+		display: none;
+	}
 }
 
 a 
@@ -61,34 +70,35 @@ footer
 	background: $footer-background;
 	color: $footer-text;
 	min-height: 100px;
-	width:99%;
 }
 
 i
 {
-	margin: 10px;
+	margin: 0px 10px;
 }
 
 @include media($tiny-breakpoint) {
     ul 
 	{
-		width: 175px;
+		float: right;
         position: relative;
+		margin-top: -8px;
+
+		li:first-child {
+          position: relative;
+          opacity: 1;
+		  display: block;
+		  font-size: 1.7rem;
+		  background: $home-menu-background;	
+        }
+
         li {
           position: absolute;
           opacity: 0;
 		  display: block;
-          @include transition(222ms);
-
-		  i
-			{
-				opacity: 1;
-			}
+          @include transition(333ms);
         }
-        li:first-child {
-          position: relative;
-          opacity: 1;
-        }
+        
 
         &:hover {
           li {
@@ -101,5 +111,13 @@ i
 	{
 		@include span-columns(6);
 		@include omega(2n);
+	}
+}
+
+@include media($super-tiny-breakpoint) {
+	article
+	{
+		@include span-columns(12);
+		@include omega(1n);
 	}
 }
