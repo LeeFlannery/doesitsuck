@@ -2,8 +2,10 @@
 
 .ReviewsContainer {
     article {
+        margin: 0;
         background-color: #444;
         height: 100%;
+        border: 1px solid #fff;
         aside {
             width: 50%;
             line-height: 2rem;
