@@ -139,13 +139,9 @@ input[type=radio]:checked + label {
 body {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; }
 
-header {
+header[role="heading"] {
   max-width: 68rem;
-  margin-left: auto;
-  margin-right: auto; }
-
-nav {
-  margin: 20px 0px; }
+  margin: 20px auto; }
 
 h1[role="heading"] {
   background: #00bcff;
@@ -153,6 +149,8 @@ h1[role="heading"] {
   font-size: 1rem;
   margin: -6px 15px 0px 0px;
   padding: 6px; }
+  h1[role="heading"] a {
+    color: white; }
 
 ul {
   list-style-type: none;
@@ -206,25 +204,35 @@ i {
   margin: 0px 10px; }
 
 @media screen and (max-width: 767px) {
-  ul {
+  nav {
     float: right;
-    position: relative;
-    margin-top: -8px; }
+    margin-top: -7px; }
+
+  ul {
+    right: 0;
+    position: absolute; }
     ul li:first-child {
-      position: relative;
       opacity: 1;
       display: block;
       font-size: 1.7rem;
-      background: #00bcff; }
+      text-align: center;
+      padding: 0; }
     ul li {
-      position: absolute;
+      position: relative;
       opacity: 0;
       display: block;
+      background: #00bcff;
+      line-height: 2rem;
+      color: white;
+      padding: 4px;
+      border-top: 1px solid white;
       -webkit-transition: 333ms;
       -moz-transition: 333ms;
       transition: 333ms; }
     ul:hover li {
       opacity: 1; }
+    ul a {
+      color: white; }
 
   article {
     float: left;

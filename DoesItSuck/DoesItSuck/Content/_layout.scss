@@ -4,17 +4,12 @@ body {
 	font-family: $lucida;
 }
 
-header
+header[role="heading"]
 {
 	max-width: 68rem;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 20px auto;
 }
 
-nav
-{
-	margin: 20px 0px;
-}
 
 h1[role="heading"]
 {
@@ -23,8 +18,13 @@ h1[role="heading"]
 	font-size: 1rem;
 	margin: -6px 15px 0px 0px;
 	padding: 6px;
+
+	a
+	{
+		color: $home-menu-text;
+	}
 }
- 
+
 ul
 {
 	list-style-type :none;
@@ -78,24 +78,34 @@ i
 }
 
 @include media($tiny-breakpoint) {
-    ul 
+	nav
 	{
 		float: right;
-        position: relative;
-		margin-top: -8px;
+		margin-top: -7px;
+	}
+
+    ul 
+	{
+		right: 0;
+        position: absolute;		
 
 		li:first-child {
-          position: relative;
           opacity: 1;
 		  display: block;
 		  font-size: 1.7rem;
-		  background: $home-menu-background;	
+		  text-align: center;
+		  padding: 0;
         }
 
         li {
-          position: absolute;
+          position: relative;
           opacity: 0;
 		  display: block;
+		  background: $home-menu-background;	
+		  line-height: 2rem;
+		  color: $home-menu-text;
+		  padding: 4px;
+		  border-top: 1px solid $home-menu-text;
           @include transition(333ms);
         }
         
@@ -105,6 +115,11 @@ i
             opacity: 1;
           }
         }
+
+		a
+		{
+			color: $home-menu-text;
+		}
 	}
 
 	article
