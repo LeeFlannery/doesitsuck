@@ -1,14 +1,12 @@
 ﻿@model DoesItSuck.Models.Review
 
-<h2>Create</h2>
+<h2>Tell us: Does It Suck?</h2>
 
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
 
     <fieldset>
-        <legend>Review</legend>
-        
         <div>
             @Html.LabelFor(model => model.Title)
             @Html.EditorFor(model => model.Title)
@@ -16,7 +14,7 @@
         </div>
 
         <div>
-            @Html.LabelFor(model => model.Body)
+            @Html.LabelFor(model => model.Body, new { @class = "bodyLabel" })
             @Html.EditorFor(model => model.Body)
             @Html.ValidationMessageFor(model => model.Body)
         </div>
@@ -42,14 +40,11 @@
         </div>
         
         <p>
-            <input type="submit" value="Create" />
+            <input type="submit" class="submitLink" value="DO IT!" />
+            @Html.ActionLink("be lame", "Index",null,new{@class = "cancelLink"})
         </p>
     </fieldset>
 }
-
-<div>
-    @Html.ActionLink("Cancel", "Index")
-</div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

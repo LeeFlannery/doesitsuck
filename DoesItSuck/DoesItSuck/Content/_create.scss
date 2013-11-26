@@ -1,12 +1,57 @@
 fieldset
 {
 	width: 50em;
+	@include linear-gradient(to top, #CCCCCC, #EEEEEE);
+	@include border-top-radius(5px);
+	@include border-bottom-radius(5px);
+	@include border-left-radius(5px);
+	@include border-right-radius(5px);
 }
 
 label 
 {
 		display: inline-block;
-		width: 10em;
+		width: 6em;
+}
+
+.submitLink 
+{
+    color:$text-color;
+    font-size:100%;
+    padding:14px;
+    background-color:$category-tech-header;
+    border:1px solid $category-lulz-header;
+	@include border-top-radius(5px);
+	@include border-bottom-radius(5px);
+	@include border-left-radius(5px);
+	@include border-right-radius(5px);
+    -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+    -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+    cursor:pointer;
+}
+.submitLink:hover {
+    background-color:$category-tech-body;
+}
+
+.cancelLink 
+{
+    color:$text-color;
+    font-size:70%;
+    padding:5px;
+    background-color:$category-video-header;
+    border:1px solid $category-lulz-header;
+	@include border-top-radius(5px);
+	@include border-bottom-radius(5px);
+	@include border-left-radius(5px);
+	@include border-right-radius(5px);
+    -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+    -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+    cursor:pointer;
+}
+.cancelLink:hover {
+    background-color:$category-video-body;
 }
 
 .text-box.single-line
@@ -17,6 +62,12 @@ label
 textarea
 {
 	width: 20em;
+	height: 10em;
+}
+
+.bodyLabel
+{
+	margin-top: -5em;
 }
 
 .field-validation-error	
@@ -76,4 +127,9 @@ input[type=radio]:checked + label
 { 
    background-image: none;
    background-color:$category-music-header;
+}
+
+#Rating
+{
+	width: 30px;
 }
