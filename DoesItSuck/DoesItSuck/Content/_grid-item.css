@@ -1,0 +1,25 @@
+.ReviewsContainer article {
+  background-color: #444;
+  height: 100%; }
+  .ReviewsContainer article aside {
+    width: 50%;
+    line-height: 2rem;
+    text-transform: uppercase;
+    background-color: #00a0db;
+    color: #fff;
+    text-align: center; }
+  .ReviewsContainer article header {
+    background-color: #136996;
+    color: #fff;
+    padding: 10px 10px; }
+    .ReviewsContainer article header h1 {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 1.3rem; }
+  .ReviewsContainer article section {
+    height: 100%; }
+    .ReviewsContainer article section a {
+      display: none; }
+  .ReviewsContainer article .rating {
+    display: none; }
+

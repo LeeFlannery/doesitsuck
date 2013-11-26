@@ -6,11 +6,11 @@
         <article>
             <header>
                 <h1>@Html.DisplayFor(modelItem => item.Title)</h1>
-                <p>@Html.DisplayFor(modelItem => item.Rating)</p>
+                <p>@Html.DisplayFor(modelItem => item.Body)</p>
+                <p class="rating">@Html.DisplayFor(modelItem => item.Rating)</p>
             </header>
             <section>
-                <p>@Html.DisplayFor(modelItem => item.Body)</p>
-                @Html.DisplayFor(modelItem => item.Link)
+                <a>@Html.DisplayFor(modelItem => item.Link)</a>
             </section>
             <aside>
                 @Html.DisplayFor(modelItem => item.Category)

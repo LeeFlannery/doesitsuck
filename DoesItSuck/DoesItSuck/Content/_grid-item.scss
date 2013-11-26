@@ -1,2 +1,38 @@
-﻿article {
+﻿@import '_variables.scss';
+
+.ReviewsContainer {
+    article {
+        background-color: #444;
+        height: 100%;
+        aside {
+            width: 50%;
+            line-height: 2rem;
+            text-transform: uppercase;
+            background-color: $category-movies-header;
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            background-color: $category-movies-body;
+            color: #fff;
+            padding: 10px 10px;
+            h1 {
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 1.3rem;
+            }
+        }
+        section {
+            height: 100%;
+            a {
+                display: none;
+            }
+        }
+        .rating {
+            display: none;
+        }
+    }
 }
+
+
+
