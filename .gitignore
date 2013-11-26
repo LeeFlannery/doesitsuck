@@ -109,3 +109,5 @@ UpgradeLog*.XML
 
 # Sass cache
 .sass-cache
+
+.orig
