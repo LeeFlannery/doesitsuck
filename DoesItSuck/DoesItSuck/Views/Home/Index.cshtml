@@ -1,46 +1,20 @@
 ﻿@model IEnumerable<DoesItSuck.Models.Review>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table>
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Rating)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Body)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Link)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Date_Created)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Rating)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Body)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Link)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Date_Created)
-        </td>
-    </tr>
-}
-
-</table>
+<section class="ReviewsContainer">
+    @foreach (var item in Model)
+    {
+        <article>
+            <header>
+                <h1>@Html.DisplayFor(modelItem => item.Title)</h1>
+                <p>@Html.DisplayFor(modelItem => item.Rating)</p>
+            </header>
+            <section>
+                <p>@Html.DisplayFor(modelItem => item.Body)</p>
+                @Html.DisplayFor(modelItem => item.Link)
+            </section>
+            <aside>
+                @Html.DisplayFor(modelItem => item.Category)
+            </aside>
+        </article>
+    }
+</section>

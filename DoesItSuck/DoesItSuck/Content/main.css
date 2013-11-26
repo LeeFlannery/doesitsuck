@@ -1,6 +1,180 @@
-body {
-  height: 100%;
-  width: 100%;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+fieldset {
+  width: 50em; }
+
+label {
+  display: inline-block;
+  width: 10em; }
+
+.text-box.single-line {
+  width: 20em; }
+
+textarea {
+  width: 20em; }
+
+.field-validation-error {
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  color: red; }
+
+input[type=radio] {
+  display: none;
+  margin: 10px; }
+
+input[type=radio] + label {
+  display: inline-block;
   margin: 0px;
-  color: #b0b0b0; }
+  padding: 4px 12px;
+  background-color: #e7e7e7;
+  border-color: black;
+  width: auto; }
+
+input[type=radio]:checked + label {
+  background-image: none;
+  background-color: #d0d0d0; }
+
+.Games_radio {
+  background-image: none;
+  background-color: #e99f00; }
+
+.Tech_radio input[type=radio]:checked + label {
+  background-image: none;
+  background-color: #96d400; }
+
+.LULZ_radio > input[type=radio]:checked + label {
+  background-image: none;
+  background-color: #555555; }
+
+.Movies_radio > input[type=radio]:checked + label {
+  background-image: none;
+  background-color: #00a0db; }
+
+.Video_radio > input[type=radio]:checked + label {
+  background-image: none;
+  background-color: #aa0000; }
+
+.Music_radio > input[type=radio]:checked + label {
+  background-image: none;
+  background-color: #f03232; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; }
+
+nav {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+  nav:before, nav:after {
+    content: " ";
+    display: table; }
+  nav:after {
+    clear: both; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+li {
+  display: inline;
+  margin-right: 15px; }
+  li i {
+    opacity: 0; }
+
+li:first-of-type {
+  background: #00bcff; }
+
+a {
+  -webkit-transition: 333ms;
+  -moz-transition: 333ms;
+  transition: 333ms;
+  text-decoration: none;
+  color: #121212; }
+  a:hover {
+    text-decoration: underline; }
+
+.ReviewsContainer {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .ReviewsContainer:before, .ReviewsContainer:after {
+    content: " ";
+    display: table; }
+  .ReviewsContainer:after {
+    clear: both; }
+
+article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  article:last-child {
+    margin-right: 0; }
+  article:nth-child(4n) {
+    margin-right: 0; }
+  article:nth-child(4n+1) {
+    clear: left; }
+
+footer {
+  text-align: center;
+  background: #222222;
+  color: white;
+  min-height: 100px;
+  width: 99%; }
+
+i {
+  margin: 10px; }
+
+@media screen and (max-width: 767px) {
+  ul {
+    width: 175px;
+    position: relative; }
+    ul li {
+      position: absolute;
+      opacity: 0;
+      display: block;
+      -webkit-transition: 222ms;
+      -moz-transition: 222ms;
+      transition: 222ms; }
+      ul li i {
+        opacity: 1; }
+    ul li:first-child {
+      position: relative;
+      opacity: 1; }
+    ul:hover li {
+      opacity: 1; }
+
+  article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    article:last-child {
+      margin-right: 0; }
+    article:nth-child(2n) {
+      margin-right: 0; }
+    article:nth-child(2n+1) {
+      clear: left; } }
+      
+      
 

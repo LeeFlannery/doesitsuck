@@ -26,7 +26,5 @@ namespace DoesItSuck.Models
         }
     
         public DbSet<Review> Review { get; set; }
-        public DbSet<Review_Tag_Rel> Review_Tag_Rel { get; set; }
-        public DbSet<Tag> Tag { get; set; }
     }
 }

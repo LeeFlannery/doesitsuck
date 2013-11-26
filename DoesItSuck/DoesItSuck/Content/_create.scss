@@ -1,0 +1,79 @@
+fieldset
+{
+	width: 50em;
+}
+
+label 
+{
+		display: inline-block;
+		width: 10em;
+}
+
+.text-box.single-line
+{
+	width: 20em;
+}
+
+textarea
+{
+	width: 20em;
+}
+
+.field-validation-error	
+{
+	@include transition-property (transform);
+	@include transition-duration(0.5s);
+	@include transition-timing-function(ease-in);
+	color: red;
+}
+
+
+input[type=radio] {
+    display:none; 
+    margin:10px;
+}
+ input[type=radio] + label {
+    display:inline-block;
+    margin:0px;
+    padding: 4px 12px;
+    background-color: #e7e7e7;
+    border-color: black;
+	width: auto;
+}
+
+input[type=radio]:checked + label 
+{ 
+   background-image: none;
+   background-color:#d0d0d0;
+}
+
+.Games_radio
+{ 
+   background-image: none;
+   background-color:$category-games-header;
+}
+.Tech_radio input[type=radio]:checked + label 
+{ 
+   background-image: none;
+   background-color:$category-tech-header;
+}
+.LULZ_radio > input[type=radio]:checked + label 
+{ 
+   background-image: none;
+   background-color:$category-lulz-header;
+}
+.Movies_radio > input[type=radio]:checked + label 
+{ 
+   background-image: none;
+   background-color:$category-movies-header;
+}
+.Video_radio > input[type=radio]:checked + label 
+{ 
+   background-image: none;
+   background-color:$category-video-header;
+}
+.Music_radio > input[type=radio]:checked + label 
+{ 
+   background-image: none;
+   background-color:$category-music-header;
+}

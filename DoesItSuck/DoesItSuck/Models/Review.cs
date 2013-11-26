@@ -11,21 +11,25 @@ namespace DoesItSuck.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class Review
     {
-        public Review()
-        {
-            this.Review_Tag_Rel = new HashSet<Review_Tag_Rel>();
-        }
-    
         public int Review_ID { get; set; }
+
+        [Required()]
         public string Title { get; set; }
+
+        [DataType(DataType.MultilineText)]
+        [Required()]
         public string Body { get; set; }
         public string Link { get; set; }
+        public string Category { get; set; }
+
+        [Required(ErrorMessage = "Rating is required.")]
+        [RegularExpression("[1-5]", ErrorMessage="Rating must be between 1 and 5.")]
+        [Range(typeof(byte),"1","5", ErrorMessage="Rating must be between 1 and 5.")]
         public byte Rating { get; set; }
         public System.DateTime Date_Created { get; set; }
-    
-        public virtual ICollection<Review_Tag_Rel> Review_Tag_Rel { get; set; }
     }
 }

@@ -1,35 +1,41 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Does It Suck?</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
-    </head>
-    <body>
-        <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("Does It Suck?", "Index", "Home")</p>
-                </div>
-            </div>
-        </header>
-        <div id="body">
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-            </section>
-        </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - Team Two dot biz</p>
-                </div>
-            </div>
-        </footer>
+<head>
+    <meta charset="utf-8" />
+    <title>DOES IT SUCK?</title>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/font-awesome")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>        
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("DOES IT SUCK?", "Index", "Home")<i class="fa fa-bars"></i></li>
+                @foreach (var value in Enum.GetValues(typeof(DoesItSuck.Models.Category)))
+                {
+                    <li>@Html.ActionLink(value.ToString().ToUpper(), "Index", new { category = value })</li>
+                }
+                <li>@Html.ActionLink("Create Review", "Create")</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        @RenderBody()
+    </section>
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Does It Suck?</p>
+        <i class="fa fa-facebook fa-2x"></i>
+        <i class="fa fa-twitter fa-2x"></i>
+        <i class="fa fa-google-plus fa-2x"></i>
+        <i class="fa fa-rss fa-2x"></i>
+        <i class="fa fa-youtube fa-2x"></i>
+        <i class="fa fa-pinterest fa-2x"></i>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
 
-        @Scripts.Render("~/bundles/jquery")
-        @RenderSection("scripts", required: false)
-    </body>
+</body>
 </html>
+

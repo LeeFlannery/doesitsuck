@@ -1,9 +1,5 @@
 ﻿@model DoesItSuck.Models.Review
 
-@{
-    ViewBag.Title = "Create";
-}
-
 <h2>Create</h2>
 
 @using (Html.BeginForm()) {
@@ -13,34 +9,34 @@
     <fieldset>
         <legend>Review</legend>
         
-        <div class="editor-label">
+        <div>
             @Html.LabelFor(model => model.Title)
-        </div>
-        <div class="editor-field">
             @Html.EditorFor(model => model.Title)
             @Html.ValidationMessageFor(model => model.Title)
         </div>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Rating)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Rating)
-            @Html.ValidationMessageFor(model => model.Rating)
-        </div>
-
-        <div class="editor-label">
+        <div>
             @Html.LabelFor(model => model.Body)
-        </div>
-        <div class="editor-field">
             @Html.EditorFor(model => model.Body)
             @Html.ValidationMessageFor(model => model.Body)
         </div>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Link)
+        <div>
+
+            @Html.LabelFor(model => model.Category)
+            @foreach (var value in Enum.GetValues(typeof(DoesItSuck.Models.Category)))
+            {
+                @Html.RadioButtonFor(model => model.Category, value,  new { id = value, @class = value + "_radio" })
+                @Html.Label(value.ToString(), new { @class = value + "_radio" })
+            }    
         </div>
-        <div class="editor-field">
+        <div>
+            @Html.LabelFor(model => model.Rating)
+            @Html.TextBoxFor(model => model.Rating, new {min="1", max="5", step="1" } )
+            @Html.ValidationMessageFor(model => model.Rating)
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Link)
             @Html.EditorFor(model => model.Link)
             @Html.ValidationMessageFor(model => model.Link)
         </div>
@@ -52,7 +48,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Cancel", "Index")
 </div>
 
 @section Scripts {
