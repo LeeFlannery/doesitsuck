@@ -194,6 +194,18 @@ article {
   article:nth-child(4n+1) {
     clear: left; }
 
+fieldset {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  fieldset:last-child {
+    margin-right: 0; }
+  fieldset:nth-child(1n) {
+    margin-right: 0; }
+  fieldset:nth-child(1n+1) {
+    clear: left; }
+
 footer {
   text-align: center;
   background: #222222;

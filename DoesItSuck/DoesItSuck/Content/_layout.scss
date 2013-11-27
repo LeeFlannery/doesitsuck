@@ -64,6 +64,12 @@ article
 	@include omega(4n);
 }
 
+fieldset
+{
+	@include span-columns(12);
+	@include omega(1n);
+}
+
 footer
 {
 	text-align: center;

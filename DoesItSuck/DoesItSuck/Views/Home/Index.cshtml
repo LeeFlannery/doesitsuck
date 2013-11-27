@@ -1,20 +1,20 @@
 ﻿@model IEnumerable<DoesItSuck.Models.Review>
 
-<section class="ReviewsContainer">
-    @foreach (var item in Model)
-    {
-        <article>
-            <header>
-                <h1>@Html.DisplayFor(modelItem => item.Title)</h1>
-                <p>@Html.DisplayFor(modelItem => item.Body)</p>
-                <p class="rating">@Html.DisplayFor(modelItem => item.Rating)</p>
-            </header>
-            <section>
-                <a>@Html.DisplayFor(modelItem => item.Link)</a>
-            </section>
-            <aside>
-                @Html.DisplayFor(modelItem => item.Category)
-            </aside>
-        </article>
-    }
-</section>
+
+@foreach (var item in Model)
+{
+    <article>
+        <header>
+            <h1>@Html.DisplayFor(modelItem => item.Title)</h1>
+            <p>@Html.DisplayFor(modelItem => item.Body)</p>
+            <p class="rating">@Html.DisplayFor(modelItem => item.Rating)</p>
+        </header>
+        <section>
+            <a>@Html.DisplayFor(modelItem => item.Link)</a>
+        </section>
+        <aside>
+            @Html.DisplayFor(modelItem => item.Category)
+        </aside>
+    </article>
+}
+
