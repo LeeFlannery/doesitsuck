@@ -5,10 +5,11 @@
 
 fieldset {
   width: 50em;
-  background-color: #cccccc;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #eeeeee));
-  background-image: -webkit-linear-gradient(bottom, #cccccc, #eeeeee);
-  background-image: linear-gradient(to top,#cccccc, #eeeeee);
+  color: white;
+  background-color: #222222;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #222222), color-stop(100%, #333333));
+  background-image: -webkit-linear-gradient(bottom, #222222, #333333);
+  background-image: linear-gradient(to top,#222222, #333333);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -48,23 +49,7 @@ label {
   color: #f8f8f8;
   font-size: 70%;
   padding: 5px;
-  background-color: #aa0000;
-  border: 1px solid #555555;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
   cursor: pointer; }
-
-.cancelLink:hover {
-  background-color: #990000; }
 
 .text-box.single-line {
   width: 20em; }
@@ -89,44 +74,47 @@ textarea {
   color: red; }
 
 input[type=radio] {
-  display: none;
   margin: 10px; }
 
 input[type=radio] + label {
   display: inline-block;
   margin: 0px;
   padding: 4px 12px;
-  background-color: #e7e7e7;
   border-color: black;
-  width: auto; }
-
-input[type=radio]:checked + label {
+  width: auto;
   background-image: none;
-  background-color: #d0d0d0; }
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  min-width: 80px;
+  text-align: center; }
 
 .Games_radio {
-  background-image: none;
   background-color: #e99f00; }
 
-.Tech_radio input[type=radio]:checked + label {
-  background-image: none;
+.Tech_radio {
   background-color: #96d400; }
 
-.LULZ_radio > input[type=radio]:checked + label {
-  background-image: none;
+.LULZ_radio {
   background-color: #555555; }
 
-.Movies_radio > input[type=radio]:checked + label {
-  background-image: none;
+.Movies_radio {
   background-color: #00a0db; }
 
-.Video_radio > input[type=radio]:checked + label {
-  background-image: none;
+.Video_radio {
   background-color: #aa0000; }
 
-.Music_radio > input[type=radio]:checked + label {
-  background-image: none;
+.Music_radio {
   background-color: #f03232; }
+
+#categories {
+  margin-left: 6em;
+  margin-top: -1em; }
 
 #Rating {
   width: 30px; }

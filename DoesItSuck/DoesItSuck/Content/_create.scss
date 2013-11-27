@@ -1,7 +1,8 @@
 fieldset
 {
 	width: 50em;
-	@include linear-gradient(to top, #CCCCCC, #EEEEEE);
+	color:$footer-text;
+	@include linear-gradient(to top, $footer-background, #333333);
 	@include border-top-radius(5px);
 	@include border-bottom-radius(5px);
 	@include border-left-radius(5px);
@@ -39,19 +40,7 @@ label
     color:$text-color;
     font-size:70%;
     padding:5px;
-    background-color:$category-video-header;
-    border:1px solid $category-lulz-header;
-	@include border-top-radius(5px);
-	@include border-bottom-radius(5px);
-	@include border-left-radius(5px);
-	@include border-right-radius(5px);
-    -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
-    -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
-    box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
     cursor:pointer;
-}
-.cancelLink:hover {
-    background-color:$category-video-body;
 }
 
 .text-box.single-line
@@ -80,53 +69,52 @@ textarea
 
 
 input[type=radio] {
-    display:none; 
     margin:10px;
 }
  input[type=radio] + label {
     display:inline-block;
     margin:0px;
     padding: 4px 12px;
-    background-color: #e7e7e7;
     border-color: black;
 	width: auto;
-}
-
-input[type=radio]:checked + label 
-{ 
    background-image: none;
-   background-color:#d0d0d0;
+	@include border-top-radius(5px);
+	@include border-bottom-radius(5px);
+	@include border-left-radius(5px);
+	@include border-right-radius(5px);
+	min-width:80px;
+	text-align:center;
 }
 
 .Games_radio
 { 
-   background-image: none;
    background-color:$category-games-header;
 }
-.Tech_radio input[type=radio]:checked + label 
+.Tech_radio
 { 
-   background-image: none;
    background-color:$category-tech-header;
 }
-.LULZ_radio > input[type=radio]:checked + label 
+.LULZ_radio
 { 
-   background-image: none;
    background-color:$category-lulz-header;
 }
-.Movies_radio > input[type=radio]:checked + label 
+.Movies_radio
 { 
-   background-image: none;
    background-color:$category-movies-header;
 }
-.Video_radio > input[type=radio]:checked + label 
+.Video_radio
 { 
-   background-image: none;
    background-color:$category-video-header;
 }
-.Music_radio > input[type=radio]:checked + label 
+.Music_radio
 { 
-   background-image: none;
    background-color:$category-music-header;
+}
+
+#categories
+{
+	margin-left:6em;
+	margin-top:-1em;
 }
 
 #Rating

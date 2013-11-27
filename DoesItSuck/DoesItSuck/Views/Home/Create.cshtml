@@ -20,13 +20,19 @@
         </div>
 
         <div>
-
-            @Html.LabelFor(model => model.Category)
+            <div>
+                @Html.LabelFor(model => model.Category)
+            </div>
+            <div id="categories">
             @foreach (var value in Enum.GetValues(typeof(DoesItSuck.Models.Category)))
             {
+                    
                 @Html.RadioButtonFor(model => model.Category, value,  new { id = value, @class = value + "_radio" })
                 @Html.Label(value.ToString(), new { @class = value + "_radio" })
+                <br />
             }    
+        </div>
+
         </div>
         <div>
             @Html.LabelFor(model => model.Rating)
