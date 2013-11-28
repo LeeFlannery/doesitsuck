@@ -1,11 +1,17 @@
 ﻿@import '_variables.scss';
 
 .ReviewsContainer {
+
+
+
     article {
         margin: 0;
         background-color: #444;
         height: 100%;
         border: 1px solid #fff;
+        a {
+            text-decoration: none;
+        }
         aside {
             width: 50%;
             line-height: 2rem;
@@ -13,7 +19,7 @@
             background-color: $category-movies-header;
             color: #fff;
             text-align: center;
-        }
+        } 
         header {
             background-color: $category-movies-body;
             color: #fff;
@@ -26,12 +32,6 @@
         }
         section {
             height: 100%;
-            a {
-                display: none;
-            }
-        }
-        .rating {
-            display: none;
         }
     }
 }

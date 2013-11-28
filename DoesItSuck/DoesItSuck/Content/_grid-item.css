@@ -3,6 +3,8 @@
   background-color: #444;
   height: 100%;
   border: 1px solid #fff; }
+  .ReviewsContainer article a {
+    text-decoration: none; }
   .ReviewsContainer article aside {
     width: 50%;
     line-height: 2rem;
@@ -20,8 +22,4 @@
       font-size: 1.3rem; }
   .ReviewsContainer article section {
     height: 100%; }
-    .ReviewsContainer article section a {
-      display: none; }
-  .ReviewsContainer article .rating {
-    display: none; }
 
