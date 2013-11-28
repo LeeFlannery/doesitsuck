@@ -5,13 +5,6 @@
   border: 1px solid #fff; }
   .ReviewsContainer article a {
     text-decoration: none; }
-  .ReviewsContainer article aside {
-    width: 50%;
-    line-height: 2rem;
-    text-transform: uppercase;
-    background-color: #00a0db;
-    color: #fff;
-    text-align: center; }
   .ReviewsContainer article header {
     background-color: #136996;
     color: #fff;
@@ -22,4 +15,22 @@
       font-size: 1.3rem; }
   .ReviewsContainer article section {
     height: 100%; }
+.ReviewsContainer .category {
+  width: 50%;
+  line-height: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center; }
+.ReviewsContainer .Games {
+  background-color: #e99f00; }
+.ReviewsContainer .Tech {
+  background-color: #96d400; }
+.ReviewsContainer .Music {
+  background-color: #f03232; }
+.ReviewsContainer .Video {
+  background-color: #aa0000; }
+.ReviewsContainer .Movies {
+  background-color: #00a0db; }
+.ReviewsContainer .LULZ {
+  background-color: #555555; }
 

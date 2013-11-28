@@ -3,16 +3,16 @@
 
 @foreach (var item in Model)
 {
-    <article class="@item.Category">
+    <article>
         <a href="@item.Link">
             <header>
                 <h1>@Html.DisplayFor(modelItem => item.Title)</h1>
             </header>
             <p>@Html.DisplayFor(modelItem => item.Body)</p>
             <p class="rating">@Html.DisplayFor(modelItem => item.Rating)</p>
-            <aside>
+            <p class="category @item.Category">
                 @Html.DisplayFor(modelItem => item.Category)
-            </aside>
+            </p>
         </a>
     </article>
 }

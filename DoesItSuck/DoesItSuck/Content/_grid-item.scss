@@ -2,8 +2,6 @@
 
 .ReviewsContainer {
 
-
-
     article {
         margin: 0;
         background-color: #444;
@@ -12,14 +10,6 @@
         a {
             text-decoration: none;
         }
-        aside {
-            width: 50%;
-            line-height: 2rem;
-            text-transform: uppercase;
-            background-color: $category-movies-header;
-            color: #fff;
-            text-align: center;
-        } 
         header {
             background-color: $category-movies-body;
             color: #fff;
@@ -34,7 +24,33 @@
             height: 100%;
         }
     }
+
+    .category {
+            width: 50%;
+            line-height: 2rem;
+            text-transform: uppercase;
+            color: #fff;
+            text-align: center;
+    }
+    .Games {
+        background-color: $category-games-header;
+    }
+    .Tech {
+        background-color: $category-tech-header;
+    }
+    .Music {
+        background-color: $category-music-header;
+    }
+    .Video {
+        background-color: $category-video-header;
+    }
+    .Movies {
+        background-color: $category-movies-header;
+    }
+    .LULZ {
+        background-color: $category-lulz-header;
+    }
+
+
 }
-
-
 
