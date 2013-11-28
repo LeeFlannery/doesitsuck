@@ -4,24 +4,24 @@
 
     article {
         margin: 0;
-        background-color: #444;
         height: 100%;
-        border: 1px solid #fff;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        background-color: #444;
         a {
             text-decoration: none;
+            color: #fff;
         }
         header {
-            background-color: $category-movies-body;
-            color: #fff;
-            padding: 10px 10px;
+            padding: 10px;
             h1 {
                 text-transform: uppercase;
-                color: #fff;
                 font-size: 1.3rem;
             }
         }
-        section {
-            height: 100%;
+        .desc {
+            margin: 0;
+            padding: 0 10px 10px 10px;
         }
     }
 
@@ -32,23 +32,72 @@
             color: #fff;
             text-align: center;
     }
+
     .Games {
-        background-color: $category-games-header;
+        .category {
+            background-color: $category-games-header;
+        }
+        header {
+            background-color: $category-games-body;
+        }
+        .desc {
+            background-color: $category-games-body;
+        }
     }
     .Tech {
-        background-color: $category-tech-header;
+        .category {
+            background-color: $category-tech-header;
+        }
+        header {
+            background-color: $category-tech-body;
+        }
+        .desc {
+            background-color: $category-tech-body;
+        }
     }
     .Music {
-        background-color: $category-music-header;
+        .category {
+            background-color: $category-music-header;
+        }
+        header {
+            background-color: $category-music-body;
+        }
+        .desc {
+            background-color: $category-music-body;
+        }
     }
     .Video {
-        background-color: $category-video-header;
+        .category {
+            background-color: $category-video-header;
+        }
+        header {
+            background-color: $category-video-body;
+        }
+        .desc {
+            background-color: $category-video-body;
+        }
     }
     .Movies {
-        background-color: $category-movies-header;
+        .category {
+            background-color: $category-movies-header;
+        }
+        header {
+            background-color: $category-movies-body;
+        }
+        .desc {
+            background-color: $category-movies-body;
+        }
     }
     .LULZ {
-        background-color: $category-lulz-header;
+        .category {
+            background-color: $category-lulz-header;
+        }
+        header {
+            background-color: $category-lulz-body;
+        }
+        .desc {
+            background-color: $category-lulz-body;
+        }
     }
 
 

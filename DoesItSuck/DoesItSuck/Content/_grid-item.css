@@ -1,36 +1,60 @@
 .ReviewsContainer article {
   margin: 0;
-  background-color: #444;
   height: 100%;
-  border: 1px solid #fff; }
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background-color: #444; }
   .ReviewsContainer article a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #fff; }
   .ReviewsContainer article header {
-    background-color: #136996;
-    color: #fff;
-    padding: 10px 10px; }
+    padding: 10px; }
     .ReviewsContainer article header h1 {
       text-transform: uppercase;
-      color: #fff;
       font-size: 1.3rem; }
-  .ReviewsContainer article section {
-    height: 100%; }
+  .ReviewsContainer article .desc {
+    margin: 0;
+    padding: 0 10px 10px 10px; }
 .ReviewsContainer .category {
   width: 50%;
   line-height: 2rem;
   text-transform: uppercase;
   color: #fff;
   text-align: center; }
-.ReviewsContainer .Games {
+.ReviewsContainer .Games .category {
   background-color: #e99f00; }
-.ReviewsContainer .Tech {
+.ReviewsContainer .Games header {
+  background-color: #c95a00; }
+.ReviewsContainer .Games .desc {
+  background-color: #c95a00; }
+.ReviewsContainer .Tech .category {
   background-color: #96d400; }
-.ReviewsContainer .Music {
+.ReviewsContainer .Tech header {
+  background-color: #77af00; }
+.ReviewsContainer .Tech .desc {
+  background-color: #77af00; }
+.ReviewsContainer .Music .category {
   background-color: #f03232; }
-.ReviewsContainer .Video {
+.ReviewsContainer .Music header {
+  background-color: #a01c43; }
+.ReviewsContainer .Music .desc {
+  background-color: #a01c43; }
+.ReviewsContainer .Video .category {
   background-color: #aa0000; }
-.ReviewsContainer .Movies {
+.ReviewsContainer .Video header {
+  background-color: #990000; }
+.ReviewsContainer .Video .desc {
+  background-color: #990000; }
+.ReviewsContainer .Movies .category {
   background-color: #00a0db; }
-.ReviewsContainer .LULZ {
+.ReviewsContainer .Movies header {
+  background-color: #136996; }
+.ReviewsContainer .Movies .desc {
+  background-color: #136996; }
+.ReviewsContainer .LULZ .category {
   background-color: #555555; }
+.ReviewsContainer .LULZ header {
+  background-color: #232323; }
+.ReviewsContainer .LULZ .desc {
+  background-color: #232323; }
 
