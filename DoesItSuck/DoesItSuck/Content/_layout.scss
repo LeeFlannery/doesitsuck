@@ -75,7 +75,13 @@ footer
 	text-align: center;
 	background: $footer-background;
 	color: $footer-text;
-	min-height: 100px;
+	min-height: 150px;
+	margin-top: -16px;
+
+	p
+	{
+		padding-top: 30px;
+	}
 }
 
 i
@@ -100,7 +106,8 @@ i
 		  display: block;
 		  font-size: 1.7rem;
 		  text-align: center;
-		  padding: 0;
+		  
+		  line-height: 1.8rem;
         }
 
         li {
@@ -108,7 +115,7 @@ i
           opacity: 0;
 		  display: block;
 		  background: $home-menu-background;	
-		  line-height: 2rem;
+		  line-height: 1.2rem;
 		  color: $home-menu-text;
 		  padding: 4px;
 		  border-top: 1px solid $home-menu-text;

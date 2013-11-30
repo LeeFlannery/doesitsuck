@@ -1,12 +1,8 @@
 fieldset
 {
-	width: 50em;
+	width: 100%;
 	color:$footer-text;
 	@include linear-gradient(to top, $footer-background, #333333);
-	@include border-top-radius(5px);
-	@include border-bottom-radius(5px);
-	@include border-left-radius(5px);
-	@include border-right-radius(5px);
 }
 
 label 
@@ -20,12 +16,8 @@ label
     color:$text-color;
     font-size:100%;
     padding:14px;
-    background-color:$category-tech-header;
+    background-color:$home-menu-background;
     border:1px solid $category-lulz-header;
-	@include border-top-radius(5px);
-	@include border-bottom-radius(5px);
-	@include border-left-radius(5px);
-	@include border-right-radius(5px);
     -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
     -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
     box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
@@ -67,57 +59,47 @@ textarea
 	color: red;
 }
 
-
-input[type=radio] {
-    margin:10px;
-}
- input[type=radio] + label {
-    display:inline-block;
-    margin:0px;
-    padding: 4px 12px;
-    border-color: black;
-	width: auto;
-   background-image: none;
-	@include border-top-radius(5px);
-	@include border-bottom-radius(5px);
-	@include border-left-radius(5px);
-	@include border-right-radius(5px);
-	min-width:80px;
-	text-align:center;
-}
-
-.Games_radio
-{ 
-   background-color:$category-games-header;
-}
-.Tech_radio
-{ 
-   background-color:$category-tech-header;
-}
-.LULZ_radio
-{ 
-   background-color:$category-lulz-header;
-}
-.Movies_radio
-{ 
-   background-color:$category-movies-header;
-}
-.Video_radio
-{ 
-   background-color:$category-video-header;
-}
-.Music_radio
-{ 
-   background-color:$category-music-header;
-}
-
 #categories
 {
 	margin-left:6em;
 	margin-top:-1em;
-}
 
-#Rating
-{
-	width: 30px;
+	input[type=radio] {
+    margin:10px;
+	}
+	 input[type=radio] + label {
+		display:inline-block;
+		margin:0px;
+		padding: 4px 12px;
+		border-color: black;
+		width: auto;
+	   background-image: none;
+		min-width:80px;
+		text-align:center;
+	}
+
+	.Games_radio
+	{ 
+	   background-color:$category-games-header;
+	}
+	.Tech_radio
+	{ 
+	   background-color:$category-tech-header;
+	}
+	.LULZ_radio
+	{ 
+	   background-color:$category-lulz-header;
+	}
+	.Movies_radio
+	{ 
+	   background-color:$category-movies-header;
+	}
+	.Video_radio
+	{ 
+	   background-color:$category-video-header;
+	}
+	.Music_radio
+	{ 
+	   background-color:$category-music-header;
+	}
 }

@@ -200,6 +200,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DoesItSuckModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="Images\star.png" />
     <Content Include="Models\DoesItSuckModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DoesItSuckModel.edmx</DependentUpon>
@@ -299,6 +300,7 @@
     <Content Include="Content\neat\settings\_visual-grid.scss" />
     <Content Include="Content\neat\_neat-helpers.scss" />
     <Content Include="Content\neat\_neat.scss" />
+    <Content Include="Content\_starRating.scss" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />

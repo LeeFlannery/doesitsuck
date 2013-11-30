@@ -4,6 +4,7 @@
 @import '_create.scss';
 @import '_layout.scss';
 @import '_grid-item.scss';
+@import '_starRating.scss'; 
 
 *, *:before, *:after {
     @include box-sizing(border-box);

@@ -9,7 +9,19 @@
                 <h1>@Html.DisplayFor(modelItem => item.Title)</h1>
             </header>
             <p class="desc">@Html.DisplayFor(modelItem => item.Body)</p>
-            <p class="rating">@Html.DisplayFor(modelItem => item.Rating)</p>
+            <span class="rating">
+                @for (byte star = 5; star > 0; star--)
+                {
+                    if (item.Rating >= star)
+                    {
+                        <label class="rating-star-full rating-star-display"></label>
+                    }
+                    else
+                    {
+                        <label class="rating-star-empty rating-star-display"></label>
+                    }
+                }
+            </span>
             <p class="category">
                 @Html.DisplayFor(modelItem => item.Category)
             </p>
