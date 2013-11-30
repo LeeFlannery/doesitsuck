@@ -1,5 +1,5 @@
 # Codename: DoesItSuck
-
+http://doesitsuck.cloudapp.net/
 ## Story one: Write a review
 * user clicks the "add a review button" (main CTA) and focus moves into a text editor right in the list
 * user writes a review
