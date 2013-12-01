@@ -5,10 +5,8 @@
 {
     <article class="@item.Category @item.Arrangement">
         <a href="@item.Link">
-            <section>
-                <header>
-                    <h1>@Html.DisplayFor(modelItem => item.Title)</h1>
-                </header>
+            <section class="main">
+                <h1>@Html.DisplayFor(modelItem => item.Title)</h1>
                 <p class="desc">@Html.DisplayFor(modelItem => item.Body)</p>
                 <span class="rating">
                     @for (byte star = 5; star > 0; star--)
@@ -24,9 +22,11 @@
                     }
                 </span>
             </section>
-            <p class="category">
-                @Html.DisplayFor(modelItem => item.Category)
-            </p>
+            <section class="secondary">
+                <p class="category">
+                    @Html.DisplayFor(modelItem => item.Category)
+                </p>
+            </section>
         </a>
     </article>
 }

@@ -8,7 +8,7 @@
   .ReviewsContainer article a {
     text-decoration: none;
     color: #fff; }
-  .ReviewsContainer article header h1 {
+  .ReviewsContainer article h1 {
     margin: 0;
     text-transform: uppercase;
     font-size: 1.3rem;
@@ -27,11 +27,11 @@
   margin: 0;
   padding: 10px 20px 10px 10px;
   width: 100%; }
-.ReviewsContainer section {
+.ReviewsContainer .main {
   overflow: hidden; }
 .ReviewsContainer .Games .category {
   background-color: #e99f00; }
-.ReviewsContainer .Games header {
+.ReviewsContainer .Games h1 {
   background-color: #c95a00; }
 .ReviewsContainer .Games .desc {
   background-color: #c95a00; }
@@ -39,7 +39,7 @@
   background-color: #c95a00; }
 .ReviewsContainer .Tech .category {
   background-color: #96d400; }
-.ReviewsContainer .Tech header {
+.ReviewsContainer .Tech h1 {
   background-color: #77af00; }
 .ReviewsContainer .Tech .desc {
   background-color: #77af00; }
@@ -47,7 +47,7 @@
   background-color: #77af00; }
 .ReviewsContainer .Music .category {
   background-color: #f03232; }
-.ReviewsContainer .Music header {
+.ReviewsContainer .Music h1 {
   background-color: #a01c43; }
 .ReviewsContainer .Music .desc {
   background-color: #a01c43; }
@@ -55,7 +55,7 @@
   background-color: #a01c43; }
 .ReviewsContainer .Videos .category {
   background-color: #aa0000; }
-.ReviewsContainer .Videos header {
+.ReviewsContainer .Videos h1 {
   background-color: #990000; }
 .ReviewsContainer .Videos .desc {
   background-color: #990000; }
@@ -63,7 +63,7 @@
   background-color: #990000; }
 .ReviewsContainer .Movies .category {
   background-color: #00a0db; }
-.ReviewsContainer .Movies header {
+.ReviewsContainer .Movies h1 {
   background-color: #136996; }
 .ReviewsContainer .Movies .desc {
   background-color: #136996; }
@@ -71,7 +71,7 @@
   background-color: #136996; }
 .ReviewsContainer .LULZ .category {
   background-color: #555555; }
-.ReviewsContainer .LULZ header {
+.ReviewsContainer .LULZ h1 {
   background-color: #232323; }
 .ReviewsContainer .LULZ .desc {
   background-color: #232323; }
@@ -80,14 +80,71 @@
 .ReviewsContainer .Alpha .category {
   position: absolute;
   top: 0; }
-.ReviewsContainer .Alpha section {
+.ReviewsContainer .Alpha .main {
   width: 100%;
   position: absolute;
   bottom: 0; }
 .ReviewsContainer .Bravo .category {
   position: absolute;
-  top: 0; }
-.ReviewsContainer .Bravo section {
+  top: 0;
+  right: 0; }
+.ReviewsContainer .Bravo .main {
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+.ReviewsContainer .Charlie .category {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+.ReviewsContainer .Charlie .main {
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+.ReviewsContainer .Delta .category {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+.ReviewsContainer .Delta .main {
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+.ReviewsContainer .Echo .category {
+  position: absolute;
+  top: 0;
+  right: 0; }
+.ReviewsContainer .Echo .main {
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+.ReviewsContainer .Foxtrot .category {
+  position: absolute;
+  top: 0;
+  right: 0; }
+.ReviewsContainer .Foxtrot .main {
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+.ReviewsContainer .Golf .category {
+  position: absolute;
+  top: 0;
+  right: 0; }
+.ReviewsContainer .Golf .main {
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+.ReviewsContainer .Hotel .category {
+  position: absolute;
+  top: 0;
+  right: 0; }
+.ReviewsContainer .Hotel .main {
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+.ReviewsContainer .India .category {
+  position: absolute;
+  top: 0;
+  right: 0; }
+.ReviewsContainer .India .main {
   width: 100%;
   position: absolute;
   bottom: 0; }

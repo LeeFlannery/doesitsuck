@@ -13,13 +13,11 @@
             text-decoration: none;
             color: #fff;
         }
-        header {
-            h1 {
-                margin: 0;
-                text-transform: uppercase;
-                font-size: 1.3rem;
-                padding: 10px;
-            }
+        h1 {
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            padding: 10px;
         }
         .desc {
             margin: 0;
@@ -42,7 +40,7 @@
         width: 100%;
     }
 
-    section {
+   .main {
         overflow: hidden;
     }
 
@@ -50,7 +48,7 @@
         .category {
             background-color: $category-games-header;
         }
-        header {
+        h1 {
             background-color: $category-games-body;
         }
         .desc {
@@ -64,7 +62,7 @@
         .category {
             background-color: $category-tech-header;
         }
-        header {
+        h1 {
             background-color: $category-tech-body;
         }
         .desc {
@@ -78,7 +76,7 @@
         .category {
             background-color: $category-music-header;
         }
-        header {
+        h1 {
             background-color: $category-music-body;
         }
         .desc {
@@ -92,7 +90,7 @@
         .category {
             background-color: $category-video-header;
         }
-        header {
+        h1 {
             background-color: $category-video-body;
         }
         .desc {
@@ -106,7 +104,7 @@
         .category {
             background-color: $category-movies-header;
         }
-        header {
+        h1 {
             background-color: $category-movies-body;
         }
         .desc {
@@ -120,7 +118,7 @@
         .category {
             background-color: $category-lulz-header;
         }
-        header {
+        h1 {
             background-color: $category-lulz-body;
         }
         .desc {
@@ -136,7 +134,7 @@
             position: absolute;
             top: 0;
         }
-        section {
+        .main {
             width: 100%;
             position: absolute;
             bottom: 0;
@@ -147,8 +145,100 @@
         .category {
             position: absolute;
             top: 0;
+            right: 0;
         }
-        section {
+        .main {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .Charlie {
+        .category {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .main {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .Delta {
+        .category {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .main {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .Echo {
+        .category {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .main {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .Foxtrot {
+        .category {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .main {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .Golf {
+        .category {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .main {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .Hotel {
+        .category {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .main {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .India {
+        .category {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .main {
             width: 100%;
             position: absolute;
             bottom: 0;
