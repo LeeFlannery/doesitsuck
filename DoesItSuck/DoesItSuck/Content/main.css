@@ -226,8 +226,8 @@ i {
     article:nth-child(1n+1) {
       clear: left; } }
 .ReviewsContainer article {
+  height: 300px;
   margin: 0;
-  height: 100%;
   border-right: 1px solid #fff;
   border-bottom: 1px solid #fff;
   background-color: #444; }
