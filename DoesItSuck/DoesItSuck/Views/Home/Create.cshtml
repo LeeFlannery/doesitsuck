@@ -1,6 +1,5 @@
 ﻿@model DoesItSuck.Models.Review
 
-<h2>Tell us: Does It Suck?</h2>
 
 @using (Html.BeginForm())
 {
@@ -8,6 +7,7 @@
     @Html.ValidationSummary(true)
 
     <fieldset>
+        <h2>Tell us: Does It Suck?</h2>
         <div>
             @Html.LabelFor(model => model.Title)
             @Html.EditorFor(model => model.Title)
