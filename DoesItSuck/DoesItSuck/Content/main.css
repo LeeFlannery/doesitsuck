@@ -259,7 +259,8 @@ i {
 .ReviewsContainer section {
   width: 100%;
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  overflow: hidden; }
 .ReviewsContainer .Games .category {
   background-color: #e99f00; }
 .ReviewsContainer .Games header {

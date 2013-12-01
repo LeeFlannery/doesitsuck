@@ -172,10 +172,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Extensions\ReviewListExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Arrangement.cs" />
     <Compile Include="Models\DoesItSuckModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -194,6 +196,7 @@
     <Compile Include="Models\Review.cs">
       <DependentUpon>DoesItSuckModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ReviewUnmappedFields.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -281,11 +284,11 @@
     <Content Include="Content\bourbon\addons\_button.scss" />
     <Content Include="Content\bourbon\_bourbon-deprecated-upcoming.scss" />
     <Content Include="Content\bourbon\_bourbon.scss" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.svg" />
-    <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Fonts\fontawesome-webfont.woff" />
+    <Content Include="Fonts\fontawesome-webfont.ttf" />
+    <Content Include="Fonts\fontawesome-webfont.svg" />
+    <Content Include="Fonts\fontawesome-webfont.eot" />
+    <Content Include="Fonts\FontAwesome.otf" />
     <Content Include="Content\_create.scss" />
     <Content Include="Content\_grid-item.scss">
       <Compile>True</Compile>
