@@ -1,17 +1,16 @@
-﻿using DoesItSuck.Models;
+﻿using DoesItSuck.Extensions;
+using DoesItSuck.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using DoesItSuck.Extensions;
-using DoesItSuck.Models;
 
 namespace DoesItSuck.Controllers
 {
     public class HomeController : Controller
     {
         private DoesItSuckEntities db = new DoesItSuckEntities();
+
         //TODO kick this out to config
         private Arrangement[] arrangements = new Arrangement[] {
             Arrangement.Alpha,
@@ -27,7 +26,6 @@ namespace DoesItSuck.Controllers
             Arrangement.Alpha,
             Arrangement.Hotel
         };
-
 
         public ActionResult Index(string category)
         {
@@ -71,7 +69,6 @@ namespace DoesItSuck.Controllers
 
             return View(review);
         }
-
 
         protected override void Dispose(bool disposing)
         {

@@ -249,17 +249,12 @@ i {
   line-height: 2rem;
   text-transform: uppercase;
   color: #fff;
-  text-align: center;
-  position: absolute;
-  top: 0; }
+  text-align: center; }
 .ReviewsContainer .rating {
   margin: 0;
   padding: 10px 20px 10px 10px;
   width: 100%; }
 .ReviewsContainer section {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
   overflow: hidden; }
 .ReviewsContainer .Games .category {
   background-color: #e99f00; }
@@ -309,6 +304,20 @@ i {
   background-color: #232323; }
 .ReviewsContainer .LULZ .rating {
   background-color: #232323; }
+.ReviewsContainer .Alpha .category {
+  position: absolute;
+  top: 0; }
+.ReviewsContainer .Alpha section {
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+.ReviewsContainer .Bravo .category {
+  position: absolute;
+  top: 0; }
+.ReviewsContainer .Bravo section {
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
 
 .rating {
   overflow: hidden;
