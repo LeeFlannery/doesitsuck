@@ -151,7 +151,6 @@
 .ReviewsContainer .Golf .category {
   position: absolute;
   top: 0;
-  right: 0;
   width: 100%; }
 .ReviewsContainer .Golf .main {
   position: absolute;
@@ -159,7 +158,8 @@
   width: 50%;
   height: 100%; }
 .ReviewsContainer .Golf .secondary {
-  position: relative;
+  position: absolute;
+  right: 0;
   width: 50%;
   height: 100%; }
 .ReviewsContainer .Hotel .category {
