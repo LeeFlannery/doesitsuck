@@ -256,8 +256,7 @@ i {
   line-height: 2rem;
   text-transform: uppercase;
   color: #fff;
-  text-align: center;
-  width: 50%; }
+  text-align: center; }
 .ReviewsContainer .Games .category {
   background-color: #e99f00; }
 .ReviewsContainer .Games .main {
@@ -285,98 +284,108 @@ i {
 .ReviewsContainer .Alpha .category {
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  width: 50%; }
 .ReviewsContainer .Alpha .main {
+  position: absolute;
   width: 100%;
   height: 60%;
-  position: absolute;
   bottom: 0; }
 .ReviewsContainer .Alpha .secondary {
+  position: absolute;
   width: 100%;
   height: 40%;
-  position: absolute;
   top: 0; }
 .ReviewsContainer .Bravo .category {
   position: absolute;
   top: 0;
-  right: 0; }
+  right: 0;
+  width: 50%; }
 .ReviewsContainer .Bravo .main {
+  position: absolute;
   width: 100%;
   height: 60%;
-  position: absolute;
   bottom: 0; }
 .ReviewsContainer .Bravo .secondary {
+  position: absolute;
   width: 100%;
   height: 40%;
-  position: absolute;
   top: 0; }
 .ReviewsContainer .Charlie .category {
   position: absolute;
   bottom: 0px;
-  left: 0; }
+  left: 0;
+  width: 50%; }
 .ReviewsContainer .Charlie .main {
+  position: absolute;
   width: 100%;
   height: 60%;
-  position: absolute;
   bottom: 0; }
 .ReviewsContainer .Charlie .secondary {
+  position: absolute;
   width: 100%;
   height: 40%;
-  position: absolute;
   top: 0; }
 .ReviewsContainer .Delta .category {
   position: absolute;
   bottom: 0px;
-  right: 0; }
+  right: 0;
+  width: 50%; }
 .ReviewsContainer .Delta .main {
+  position: absolute;
   width: 100%;
   height: 60%;
-  position: absolute;
   bottom: 0; }
 .ReviewsContainer .Delta .secondary {
+  position: absolute;
   width: 100%;
   height: 40%;
-  position: absolute;
   top: 0; }
 .ReviewsContainer .Echo .category {
   position: absolute;
   top: 0;
-  right: 0; }
+  width: 100%; }
 .ReviewsContainer .Echo .main {
-  width: 100%;
   position: absolute;
-  bottom: 0; }
+  width: 50%;
+  height: 100%;
+  right: 0; }
+.ReviewsContainer .Echo .secondary {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0; }
 .ReviewsContainer .Foxtrot .category {
   position: absolute;
   top: 0;
   right: 0; }
 .ReviewsContainer .Foxtrot .main {
-  width: 100%;
   position: absolute;
+  width: 100%;
   bottom: 0; }
 .ReviewsContainer .Golf .category {
   position: absolute;
   top: 0;
   right: 0; }
 .ReviewsContainer .Golf .main {
-  width: 100%;
   position: absolute;
+  width: 100%;
   bottom: 0; }
 .ReviewsContainer .Hotel .category {
   position: absolute;
   top: 0;
   right: 0; }
 .ReviewsContainer .Hotel .main {
-  width: 100%;
   position: absolute;
+  width: 100%;
   bottom: 0; }
 .ReviewsContainer .India .category {
   position: absolute;
   top: 0;
   right: 0; }
 .ReviewsContainer .India .main {
-  width: 100%;
   position: absolute;
+  width: 100%;
   bottom: 0; }
 
 .rating {
