@@ -3,17 +3,26 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-fieldset {
-  width: 100%;
+label {
+  display: inline-block;
+  width: 6em;
+  padding-top: 2px;
+  padding-bottom: 2px; }
+
+input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px; }
+
+.input-fieldset {
+  max-width: 700px;
   color: white;
   background-color: #222222;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #222222), color-stop(100%, #333333));
   background-image: -webkit-linear-gradient(bottom, #222222, #333333);
-  background-image: linear-gradient(to top,#222222, #333333); }
-
-label {
-  display: inline-block;
-  width: 6em; }
+  background-image: linear-gradient(to top,#222222, #333333);
+  margin-bottom: 20px; }
 
 .submitLink {
   color: #f8f8f8;
@@ -21,9 +30,6 @@ label {
   padding: 14px;
   background-color: #00bcff;
   border: 1px solid #555555;
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
   cursor: pointer; }
 
 .submitLink:hover {
@@ -43,7 +49,7 @@ textarea {
   height: 10em; }
 
 .bodyLabel {
-  margin-top: -5em; }
+  margin-top: -100px; }
 
 .field-validation-error {
   -webkit-transition-property: -webkit-transform;

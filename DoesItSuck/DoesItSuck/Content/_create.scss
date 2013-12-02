@@ -1,16 +1,28 @@
-fieldset
-{
-	width: 100%;
-	color:$footer-text;
-	@include linear-gradient(to top, $footer-background, #333333);
-}
+
 
 label 
 {
-		display: inline-block;
-		width: 6em;
+	display: inline-block;
+	width: 6em;
+	padding-top:2px;
+	padding-bottom:2px;
 }
 
+input
+{
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.input-fieldset
+{
+	max-width:700px;
+	color:$footer-text;
+	@include linear-gradient(to top, $footer-background, #333333);
+	margin-bottom:20px;
+}
 .submitLink 
 {
     color:$text-color;
@@ -18,9 +30,6 @@ label
     padding:14px;
     background-color:$home-menu-background;
     border:1px solid $category-lulz-header;
-    -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
-    -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
-    box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
     cursor:pointer;
 }
 .submitLink:hover {
@@ -48,7 +57,7 @@ textarea
 
 .bodyLabel
 {
-	margin-top: -5em;
+	margin-top: -100px;
 }
 
 .field-validation-error	
