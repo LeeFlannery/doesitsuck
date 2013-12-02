@@ -18,15 +18,13 @@
             margin: 0;
             text-transform: uppercase;
             font-size: 1.3rem;
-            padding: .5rem 0 .2rem .5rem;
+            padding: .5rem;
         }
         .desc {
             margin: 0;
             padding: 0 10px;
         }
     }
-
-
 
     .rating {
         margin: 0;
@@ -46,82 +44,53 @@
 
     }
 
-            .category {
-            margin: 0;
-            padding: 0;
-            line-height: 2rem;
-            text-transform: uppercase;
-            color: #fff;
-            text-align: center;
-            width: 50%;
-        }
-        .Games {
+    .category {
+        margin: 0;
+        padding: 0;
+        line-height: 2rem;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        width: 50%;
+    }
+
+    .Games {
         .category {
             background-color: $category-games-header;
         }
-        h1 {
+        .main {
             background-color: $category-games-body;
         }
-        .desc {
-            background-color: $category-games-body;
-        }
-        .rating {
-            background-color: $category-games-body;
-       }
     }
     .Tech {
         .category {
             background-color: $category-tech-header;
         }
-        h1 {
+        .main {
             background-color: $category-tech-body;
         }
-        .desc {
-            background-color: $category-tech-body;
-        }
-        .rating {
-            background-color: $category-tech-body;
-       }
     }
     .Music {
         .category {
             background-color: $category-music-header;
         }
-        h1 {
+        .main {
             background-color: $category-music-body;
         }
-        .desc {
-            background-color: $category-music-body;
-        }
-        .rating {
-            background-color: $category-music-body;
-       }
     }
     .Videos {
         .category {
             background-color: $category-video-header;
         }
-        h1 {
+        .main {
             background-color: $category-video-body;
         }
-        .desc {
-            background-color: $category-video-body;
-        }
-        .rating {
-            background-color: $category-video-body;
-       }
     }
     .Movies {
         .category {
             background-color: $category-movies-header;
         }
-        h1 {
-            background-color: $category-movies-body;
-        }
-        .desc {
-            background-color: $category-movies-body;
-        }
-        .rating {
+        .main {
             background-color: $category-movies-body;
        }
     }
@@ -129,15 +98,9 @@
         .category {
             background-color: $category-lulz-header;
         }
-        h1 {
+        .main {
             background-color: $category-lulz-body;
         }
-        .desc {
-            background-color: $category-lulz-body;
-        }
-        .rating {
-            background-color: $category-lulz-body;
-       }
     }
 
     .Alpha {
@@ -148,11 +111,13 @@
         }
         .main {
             width: 100%;
+            height: 60%;
             position: absolute;
             bottom: 0;
         }
         .secondary {
             width: 100%;
+            height: 40%;
             position: absolute;
             top: 0;
         }
@@ -166,11 +131,13 @@
         }
         .main {
             width: 100%;
+            height: 60%;
             position: absolute;
             bottom: 0;
         }
         .secondary {
             width: 100%;
+            height: 40%;
             position: absolute;
             top: 0;
         }
@@ -204,13 +171,13 @@
         }
         .main {
             width: 100%;
-            height: 50%;
+            height: 60%;
             position: absolute;
             bottom: 0;
         }
         .secondary {
             width: 100%;
-            height: 50%;
+            height: 40%;
             position: absolute;
             top: 0;
         }
