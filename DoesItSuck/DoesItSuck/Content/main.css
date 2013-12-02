@@ -226,7 +226,7 @@ i {
     article:nth-child(1n+1) {
       clear: left; } }
 .ReviewsContainer article {
-  font-size: .8rem;
+  font-size: .9rem;
   margin: 0;
   position: relative;
   border-right: 1px solid #fff;
@@ -239,14 +239,16 @@ i {
   .ReviewsContainer article h1 {
     margin: 0;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: .9rem;
     padding: .5rem; }
   .ReviewsContainer article .desc {
     margin: 0;
     padding: 0 10px; }
 .ReviewsContainer .rating {
+  position: absolute;
+  bottom: .7rem;
+  right: .7rem;
   margin: 0;
-  padding: 10px 20px 10px 10px;
   width: 100%; }
 .ReviewsContainer section {
   position: relative; }
@@ -281,6 +283,8 @@ i {
   background-color: #555555; }
 .ReviewsContainer .LULZ .main {
   background-color: #232323; }
+.ReviewsContainer .Alpha h1 {
+  font-size: 1rem; }
 .ReviewsContainer .Alpha .category {
   position: absolute;
   top: 0;
@@ -288,14 +292,16 @@ i {
   width: 50%; }
 .ReviewsContainer .Alpha .main {
   position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 60%;
-  bottom: 0; }
+  height: 60%; }
 .ReviewsContainer .Alpha .secondary {
   position: absolute;
+  top: 0;
   width: 100%;
-  height: 40%;
-  top: 0; }
+  height: 40%; }
+.ReviewsContainer .Bravo h1 {
+  font-size: 1rem; }
 .ReviewsContainer .Bravo .category {
   position: absolute;
   top: 0;
@@ -303,14 +309,16 @@ i {
   width: 50%; }
 .ReviewsContainer .Bravo .main {
   position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 60%;
-  bottom: 0; }
+  height: 60%; }
 .ReviewsContainer .Bravo .secondary {
   position: absolute;
+  top: 0;
   width: 100%;
-  height: 40%;
-  top: 0; }
+  height: 40%; }
+.ReviewsContainer .Charlie h1 {
+  font-size: 1rem; }
 .ReviewsContainer .Charlie .category {
   position: absolute;
   bottom: 0px;
@@ -318,14 +326,16 @@ i {
   width: 50%; }
 .ReviewsContainer .Charlie .main {
   position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 60%;
-  bottom: 0; }
+  height: 60%; }
 .ReviewsContainer .Charlie .secondary {
   position: absolute;
+  top: 0;
   width: 100%;
-  height: 40%;
-  top: 0; }
+  height: 40%; }
+.ReviewsContainer .Delta h1 {
+  font-size: 1rem; }
 .ReviewsContainer .Delta .category {
   position: absolute;
   bottom: 0px;
@@ -333,60 +343,80 @@ i {
   width: 50%; }
 .ReviewsContainer .Delta .main {
   position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 60%;
-  bottom: 0; }
+  height: 60%; }
 .ReviewsContainer .Delta .secondary {
   position: absolute;
+  top: 0;
   width: 100%;
-  height: 40%;
-  top: 0; }
+  height: 40%; }
 .ReviewsContainer .Echo .category {
   position: absolute;
   top: 0;
   width: 100%; }
 .ReviewsContainer .Echo .main {
   position: absolute;
+  right: 0;
   width: 50%;
-  height: 100%;
-  right: 0; }
+  height: 100%; }
 .ReviewsContainer .Echo .secondary {
-  position: absolute;
   width: 50%;
-  height: 100%;
-  top: 0; }
+  height: 100%; }
 .ReviewsContainer .Foxtrot .category {
   position: absolute;
-  top: 0;
-  right: 0; }
+  bottom: 0;
+  width: 100%; }
 .ReviewsContainer .Foxtrot .main {
   position: absolute;
-  width: 100%;
-  bottom: 0; }
+  right: 0;
+  width: 50%;
+  height: 100%; }
+.ReviewsContainer .Foxtrot .secondary {
+  width: 50%;
+  height: 100%; }
 .ReviewsContainer .Golf .category {
   position: absolute;
   top: 0;
-  right: 0; }
+  right: 0;
+  width: 100%; }
 .ReviewsContainer .Golf .main {
   position: absolute;
-  width: 100%;
-  bottom: 0; }
+  left: 0;
+  width: 50%;
+  height: 100%; }
+.ReviewsContainer .Golf .secondary {
+  position: relative;
+  width: 50%;
+  height: 100%; }
 .ReviewsContainer .Hotel .category {
   position: absolute;
-  top: 0;
-  right: 0; }
+  bottom: 0;
+  width: 100%; }
 .ReviewsContainer .Hotel .main {
   position: absolute;
-  width: 100%;
-  bottom: 0; }
+  left: 0;
+  width: 50%;
+  height: 100%; }
+.ReviewsContainer .Hotel .secondary {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%; }
 .ReviewsContainer .India .category {
   position: absolute;
   top: 0;
-  right: 0; }
+  right: 0;
+  width: 50%; }
 .ReviewsContainer .India .main {
-  position: absolute;
+  padding: 2rem 0 0 0;
   width: 100%;
-  bottom: 0; }
+  height: 100%; }
+.ReviewsContainer .India .secondary {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40%; }
 
 .rating {
   overflow: hidden;

@@ -3,7 +3,7 @@
 .ReviewsContainer {
 
     article {
-        font-size: .8rem;
+        font-size: .9rem;
         margin: 0;
         position: relative;
         border-right: 1px solid #fff;
@@ -17,7 +17,7 @@
         h1 {
             margin: 0;
             text-transform: uppercase;
-            font-size: 1.3rem;
+            font-size: .9rem;
             padding: .5rem;
         }
         .desc {
@@ -27,8 +27,10 @@
     }
 
     .rating {
+        position: absolute;
+        bottom: .7rem;
+        right: .7rem;
         margin: 0;
-        padding: 10px 20px 10px 10px;
         width: 100%;
     }
 
@@ -95,6 +97,9 @@
     }
 
     .Alpha {
+        h1 {
+            font-size: 1rem;
+        }
         .category {
             position: absolute;
             top: 0;
@@ -103,19 +108,22 @@
         }
         .main {
             position: absolute;
+            bottom: 0;
             width: 100%;
             height: 60%;
-            bottom: 0;
         }
         .secondary {
             position: absolute;
+            top: 0;
             width: 100%;
             height: 40%;
-            top: 0;
         }
     }
 
     .Bravo {
+        h1 {
+            font-size: 1rem;
+        }
         .category {
             position: absolute;
             top: 0;
@@ -124,19 +132,22 @@
         }
         .main {
             position: absolute;
+            bottom: 0;
             width: 100%;
             height: 60%;
-            bottom: 0;
         }
         .secondary {
             position: absolute;
+            top: 0;
             width: 100%;
             height: 40%;
-            top: 0;
         }
     }
 
     .Charlie {
+        h1 {
+            font-size: 1rem;
+        }
         .category {
             position: absolute;
             bottom: 0px;
@@ -145,19 +156,22 @@
         }
         .main {
             position: absolute;
+            bottom: 0;
             width: 100%;
             height: 60%;
-            bottom: 0;
         }
         .secondary {
             position: absolute;
+            top: 0;
             width: 100%;
             height: 40%;
-            top: 0;
         }
     }
 
     .Delta {
+        h1 {
+            font-size: 1rem;
+        }
         .category {
             position: absolute;
             bottom: 0px;
@@ -166,15 +180,15 @@
         }
         .main {
             position: absolute;
+            bottom: 0;
             width: 100%;
             height: 60%;
-            bottom: 0;
         }
         .secondary {
             position: absolute;
+            top: 0;
             width: 100%;
             height: 40%;
-            top: 0;
         }
     }
 
@@ -186,28 +200,31 @@
         }
         .main {
             position: absolute;
+            right: 0;
             width: 50%;
             height: 100%;
-            right: 0;
         }
         .secondary {
-            position: absolute;
             width: 50%;
             height: 100%;
-            top: 0;
         }
     }
 
     .Foxtrot {
         .category {
             position: absolute;
-            top: 0;
-            right: 0;
+            bottom: 0;
+            width: 100%;
         }
         .main {
             position: absolute;
-            width: 100%;
-            bottom: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+        }
+        .secondary {
+            width: 50%;
+            height: 100%;
         }
     }
 
@@ -216,24 +233,38 @@
             position: absolute;
             top: 0;
             right: 0;
+            width: 100%;
         }
         .main {
             position: absolute;
-            width: 100%;
-            bottom: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+        }
+        .secondary {
+            position: relative;
+            width: 50%;
+            height: 100%;
         }
     }
 
     .Hotel {
         .category {
             position: absolute;
-            top: 0;
-            right: 0;
+            bottom: 0;
+            width: 100%;
         }
         .main {
             position: absolute;
-            width: 100%;
-            bottom: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+        }
+        .secondary {
+            position: absolute;
+            right: 0;
+            width: 50%;
+            height: 100%;
         }
     }
 
@@ -242,11 +273,18 @@
             position: absolute;
             top: 0;
             right: 0;
+            width: 50%;
         }
         .main {
-            position: absolute;
+            padding: 2rem 0 0 0;
             width: 100%;
-            bottom: 0;
+            height: 100%;
+        }
+        .secondary {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 40%;
         }
     }
 }
