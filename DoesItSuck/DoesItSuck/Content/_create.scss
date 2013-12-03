@@ -18,9 +18,9 @@ input
 
 .input-fieldset
 {
-	max-width:700px;
+	max-width:93%;
 	color:$footer-text;
-	@include linear-gradient(to top, $footer-background, #333333);
+	@include linear-gradient(to top, #666, #666);
 	margin-bottom:20px;
 }
 .submitLink 
