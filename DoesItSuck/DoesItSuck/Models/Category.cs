@@ -10,7 +10,7 @@ namespace DoesItSuck.Models
         Games = 1,
         Tech = 2,
         Music = 3,
-        Video = 4,
+        Videos = 4,
         Movies = 5,
         LULZ = 6
     }
