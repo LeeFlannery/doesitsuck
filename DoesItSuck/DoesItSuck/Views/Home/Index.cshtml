@@ -4,7 +4,7 @@
 @foreach (var item in Model)
 {
     <article class="@item.Category @item.Arrangement">
-        <a href="@item.Link">
+        <a href="@item.Link" target="_blank">
             <section class="main">
                 <h1>@Html.DisplayFor(modelItem => item.Title)</h1>
                 <p class="desc">@Html.DisplayFor(modelItem => item.Body)</p>
