@@ -4,9 +4,7 @@
 	margin-top:8px;
 }
 .rating-input {
-    position: absolute;
-    left: 0;
-    top: -50px;
+	display:none;
 }
 .rating:hover .rating-star:hover,
 .rating:hover .rating-star:hover ~ .rating-star,
