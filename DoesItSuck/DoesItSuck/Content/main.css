@@ -102,6 +102,9 @@ header[role="heading"] {
   max-width: 68rem;
   margin: 20px auto; }
 
+nav ul {
+  z-index: 9999; }
+
 h1[role="heading"] {
   background: #00bcff;
   float: left;
@@ -190,6 +193,9 @@ i {
     article:nth-child(2n+1) {
       clear: left; } }
 @media screen and (max-width: 720px) {
+  header[role="heading"] {
+    padding-bottom: 20px; }
+
   nav {
     float: right;
     margin-top: -7px; }
@@ -200,9 +206,8 @@ i {
     ul li:first-child {
       opacity: 1;
       display: block;
-      font-size: 1.7rem;
-      text-align: center;
-      line-height: 1.8rem; }
+      font-size: 1.5rem;
+      text-align: center; }
     ul li {
       position: relative;
       opacity: 0;
