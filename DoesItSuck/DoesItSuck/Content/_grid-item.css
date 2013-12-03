@@ -17,7 +17,7 @@
   .ReviewsContainer article .desc {
     margin: 0;
     padding: 0 10px; }
-.ReviewsContainer .rating {
+.ReviewsContainer .main .rating {
   position: absolute;
   bottom: .7rem;
   right: .7rem;
