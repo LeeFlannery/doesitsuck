@@ -89,6 +89,14 @@ i
 	margin: 0px 10px;
 }
 
+@include media($breakpoint) {
+	article
+	{
+		@include span-columns(6);
+		@include omega(2n);
+	}
+}
+
 @include media($tiny-breakpoint) {
 	nav
 	{
@@ -133,12 +141,6 @@ i
 		{
 			color: $home-menu-text;
 		}
-	}
-
-	article
-	{
-		@include span-columns(6);
-		@include omega(2n);
 	}
 }
 

@@ -177,7 +177,19 @@ footer {
 i {
   margin: 0px 10px; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
+  article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    article:last-child {
+      margin-right: 0; }
+    article:nth-child(2n) {
+      margin-right: 0; }
+    article:nth-child(2n+1) {
+      clear: left; } }
+@media screen and (max-width: 720px) {
   nav {
     float: right;
     margin-top: -7px; }
@@ -206,20 +218,8 @@ i {
     ul:hover li {
       opacity: 1; }
     ul a {
-      color: white; }
-
-  article {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    article:last-child {
-      margin-right: 0; }
-    article:nth-child(2n) {
-      margin-right: 0; }
-    article:nth-child(2n+1) {
-      clear: left; } }
-@media screen and (max-width: 430px) {
+      color: white; } }
+@media screen and (max-width: 480px) {
   article {
     float: left;
     display: block;

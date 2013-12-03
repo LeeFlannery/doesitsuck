@@ -22,7 +22,8 @@ $footer-text: #ffffff;
 $lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-$tiny-breakpoint: new-breakpoint(max-width 767px);
-$super-tiny-breakpoint: new-breakpoint(max-width 430px);
+$breakpoint: new-breakpoint(max-width 1000px);
+$tiny-breakpoint: new-breakpoint(max-width 720px);
+$super-tiny-breakpoint: new-breakpoint(max-width 480px);
 
 $star-image: '/Images/star.png';
