@@ -39,7 +39,8 @@ namespace DoesItSuck.Controllers
                 reviewList = db.Review.ToList();
             }
 
-            reviewList.SetArrangments(arrangements);
+            //reviewList.SetArrangments(arrangements);
+            reviewList.SetArrangments();
 
             return View(reviewList);
         }
