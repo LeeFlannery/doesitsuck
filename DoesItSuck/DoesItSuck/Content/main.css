@@ -207,11 +207,11 @@ i {
       opacity: 1;
       display: block;
       font-size: 1.5rem;
+      min-width: 125px;
       text-align: center; }
     ul li {
       position: relative;
-      opacity: 0;
-      display: block;
+      display: none;
       background: #00bcff;
       line-height: 1.2rem;
       color: white;
@@ -221,7 +221,7 @@ i {
       -moz-transition: 333ms;
       transition: 333ms; }
     ul:hover li {
-      opacity: 1; }
+      display: block; }
     ul a {
       color: white; } }
 @media screen and (max-width: 480px) {

@@ -123,13 +123,13 @@ i
           opacity: 1;
 		  display: block;
 		  font-size: 1.5rem;
+		  min-width: 125px;
 		  text-align: center;		  
         }
 
         li {
           position: relative;
-          opacity: 0;
-		  display: block;
+		  display: none;
 		  background: $home-menu-background;	
 		  line-height: 1.2rem;
 		  color: $home-menu-text;
@@ -141,7 +141,7 @@ i
 
         &:hover {
           li {
-            opacity: 1;
+			display: block;
           }
         }
 
